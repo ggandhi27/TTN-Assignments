@@ -1,1 +1,2 @@
 This is file 3.
+file3 is modified
