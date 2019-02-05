@@ -1,4 +1,4 @@
-This is file 1
+This is file
 
 This is extra line added in the second copy of repo
 
