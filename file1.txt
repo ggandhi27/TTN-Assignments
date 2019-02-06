@@ -4,3 +4,4 @@ This is extra line added in the second copy of repo
 
 This is the 3rd line added.
 This is the 4th line added.
+file1.txt is added
