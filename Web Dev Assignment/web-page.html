@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page</title>
+    <style>
+    </style>
+</head>
+<style>
+    .left-div{
+        position: absolute;
+        height: 1150px;
+        width: 30px;
+        float: left;
+        background: grey;
+        margin: 0;
+        left:0;
+    }
+    .right-div{
+        position: absolute;
+        height: 1150px;
+        width: 30px;
+        float: right;
+        background: grey;
+        margin: 0;
+        right: 0;
+    }
+    body{
+        margin: 0;
+    }
+    .header-div{
+        background: #404040;
+        height: 90px;
+        width: 100%;
+    }
+    .home-text{
+        margin-left: 90px;
+    }
+    #heading{
+        margin: 0;
+        padding: 10px;
+        padding-left: 0;
+        color: darkgrey;
+
+    }
+    .nav{
+        width: 600px;
+        height: 25px;
+        background: #232323;
+        padding-left: 10px;
+        margin: 0px;
+    }
+    .nav-link{
+        font-size: 10px;
+        text-decoration: none;
+        color: darkgrey;
+        padding-right: 4px;
+    }
+    ul#menu li{
+        display: inline-block;
+        padding: 0px;
+    }
+    #menu{
+        margin: 0;
+        padding-left: 0;
+    }
+    .main-div{
+        width: 100%;
+        background: white;
+        padding-top: 30px;
+    }
+    .sub-div-1{
+        width: 960px;
+        height: 360px;
+        background: grey;
+        margin: 0px auto;
+    }
+
+    #first-dimension{
+        text-align: center;
+        padding-top: 180px;
+        color: white;
+    }
+
+    .article{
+        width: 960px;
+        background: #cccccc;
+        margin: 0px auto;
+    }
+    #article-text{
+        text-align: justify;
+        color: grey;
+        padding: 10px;
+    }
+
+    .subheading{
+        width: 960px;
+        margin: 0px auto;
+    }
+
+    .gallery{
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        background: white;
+    }
+    .sub-gallery{
+        width: 215px;
+        height: 315px;
+        flex: 1;
+        background: grey;
+        margin: 10px;
+    }
+    .caption{
+        position: sticky;
+        bottom:0;
+        width:100%;
+        height: 20px;
+        background: #cccccc;
+    }
+    .caption-text {
+        text-align: center;
+        margin: 0px;
+        padding: 2px;
+    }
+    .footer{
+        width: 100%;
+        height: 50px;
+        background: #404040;
+    }
+</style>
+<body>
+    <div class="left-div"></div>
+    <div class="right-div"></div>
+    <div class="container">
+        <div class="header-div">
+            <div class = "home-text">
+                <h3 id="heading">To The New</h3>
+                <div class="nav">
+                    <ul id="menu">
+                        <li class="nav-link">Text Link</li>
+                        <li class="nav-link">Text Link</li>
+                        <li class="nav-link">Text Link</li>
+                        <li class="nav-link">Text Link</li>
+                        <li class="nav-link">Text Link</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-div">
+            <div class="sub-div-1">
+                <h3 id="first-dimension">960x360px</h3>
+            </div>
+            <br/>
+            <div class="article">
+                    <p id="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <br/>
+
+            <div class="subheading">
+                <h3>LATEST FROM THE GALLERY</h3>
+                <hr/>
+            </div>
+            <br/>
+
+            <div class="gallery">
+                <div class="sub-gallery">
+                    <div class="caption">
+                        <h5 class="caption-text">IMAGE CAPTION HERE</h5>
+                    </div>
+                </div>
+                <div class="sub-gallery">
+                    <div class="caption">
+                        <h5 class="caption-text">IMAGE CAPTION HERE</h5>
+                    </div>
+                </div>
+                <div class="sub-gallery">
+                    <div class="caption">
+                        <h5 class="caption-text">IMAGE CAPTION HERE</h5>
+                    </div>
+                </div>
+                <div class="sub-gallery">
+                    <div class="caption">
+                        <h5 class="caption-text">IMAGE CAPTION HERE</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" >
+                <p style="padding: 10px;margin-left: 50px;color:grey">Copyright@ 2009-2007-All Rights Reserved - To The New</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <style>
+
+        .logo{
+            color: seagreen;
+            font-size: 30px;
+            padding-left: 100px;
+            padding-top: 5px;
+            float: left;
+        }
+        .links{
+            color: seagreen;
+            float: right;
+            padding-right: 100px;
+            padding-top: 10px;
+        }
+        ul#menu li{
+            display: inline-block;
+            padding: 0px;
+        }
+        links{
+            padding: 0px;
+        }
+
+        #home-line{
+            clear: both;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: lightgrey;
+        }
+        .container{
+            position:absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid  lightgrey ;
+            margin-bottom: 40px;
+            /*height: 600px;*/
+            width: 350px;
+            border-radius: 2%;
+            padding-top: 0px;
+        }
+        .form-head {
+            background: lightgrey;
+            height: 50px;
+            width: 350px;
+
+        }
+        input[type=text], select {
+            width: 300px;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .drop-down{
+            height: 30px;
+            color: white;
+            background:seagreen;
+            -webkit-appearance: none
+        }
+
+        .radio{
+            font-size: 11px;
+            padding-left: 0px;
+        }
+        .custom-file-upload{
+            width: 300px;
+            border: 2px solid lightgrey;
+            border-radius: 4px;
+        }
+        .custom-button{
+            margin-top: 15px;
+            float: right;
+            padding: 10px;
+            margin-right: 15px;
+            color: white;
+            background: seagreen;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <div >
+        <div class="logo">
+            TO THE NEW
+        </div>
+        <div class="links">
+            <ul id="menu" >
+                <li><a href="#" style="text-decoration: none;color: seagreen;padding-right: 2px">Home</a></li>
+                <li><a href="#" style="text-decoration: none;color: seagreen;padding-left: 2px">Quick Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr id="home-line">
+    <div class="container">
+        <div class="form-head">
+            <h3 style="margin-top: 0;padding-top: 12px;padding-left: 10px;color: #ffffff">Bug Report</h3>
+        </div>
+        <div class="form-body">
+            <form>
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Title:<sup>*</sup></p>
+                <div style="padding-left: 20px;margin-top: 0px">
+                    <input type="text" style="height: 30px;padding-top: 0px"/>
+                </div>
+
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Description<sup>*</sup></p>
+                <div style="padding-left: 20px;padding-top: 5px;margin-top: 0px">
+                    <textarea  style="height: 70px;padding-top: 0px;width: 300px;border: 1px solid #ccc;border-radius: 4px"></textarea>
+                </div>
+
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Operating System<sup>*</sup></p>
+                <div style="padding-left: 20px;padding-top: 5px;margin-top: 0px">
+                    <select class = "drop-down">
+                        <option class="drop-down">Windows XP</option>
+                        <option class="drop-down">Windows 7</option00>
+                        <option class="drop-down">Windows 8</option>
+                        <option class="drop-down">Windows 10</option>
+                    </select>
+                </div>
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Product<sup>*</sup></p>
+                <div style="padding-left: 20px;padding-top: 5px;margin-top: 0px">
+                    <select class = "drop-down">
+                        <option class="drop-down">Formoid</option>
+                        <option class="drop-down">Android</option00>
+                        <option class="drop-down">Humandroid</option>
+                    </select>
+                </div>
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Version<sup>*</sup></p>
+                <div style="padding-left: 20px;margin-top: 0px">
+                    <input type="text" style="height: 30px;padding-top: 0px;width: 80px"/>
+                </div>
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">License:<sup>*</sup></p>
+                <div style="padding-left: 20px">
+                    <input type="radio" name="Free" value="Free" style="padding-left: 20px" />
+                    <label class="radio" >Free</label>
+                    <input type="radio" name="Business" value="Business" style="padding-left: 60px;margin-left: 100px">
+                    <label class="radio">Business</label>
+                </div>
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Severity:<sup>*</sup></p>
+                <div style="padding-left: 20px;padding-top: 5px;margin-top: 0px">
+                    <select class = "drop-down">
+                        <option class="drop-down">Formoid</option>
+                        <option class="drop-down">Android</option00>
+                        <option class="drop-down">Humandroid</option>
+                    </select>
+                </div>
+
+                <p style="padding-left: 20px;font-size: 13px;margin-bottom: 0px">Severity:<sup>*</sup></p>
+                <div style="padding-left: 20px">
+                    <input type="file" class="custom-file-upload"/>
+                </div>
+
+                <div class="form-head" style="margin-top: 10px">
+                    <button class="custom-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
