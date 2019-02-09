@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Example</title>
+    <style>
+
+        table, th, td{
+            border: 1px solid lawngreen;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        thead{
+            background: lawngreen;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2
+        }
+
+    </style>
+</head>
+<body>
+    <table style="border: 2px solid black">
+        <thead id="heading">
+            <th>Id</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+        </thead>
+        <tr id="1000">
+            <td>1000</td>
+            <td>Gaurav Gandhi</td>
+            <td>Trainee</td>
+            <td>JVM</td>
+        </tr>
+        <tr id="1001">
+            <td>1001</td>
+            <td>Harish</td>
+            <td>Student</td>
+            <td>Mainframe</td>
+        </tr>
+        <tr id="1002">
+            <td>1002</td>
+            <td>Abhishek Anand</td>
+            <td>Student</td>
+            <td>Telecom</td>
+        </tr>
+        <tr id="1003">
+            <td>1003</td>
+            <td>Mehak</td>
+            <td>Trainee</td>
+            <td>JVM</td>
+        </tr>
+        <tr id="1004">
+            <td>1004</td>
+            <td>Sachin Tendulkar</td>
+            <td>Sportsman</td>
+            <td>Cricket</td>
+        </tr>
+        <tr id="1005">
+            <td>1005</td>
+            <td>Akshay Kumar</td>
+            <td>Actor</td>
+            <td>Bollywood</td>
+        </tr>
+    </table>
+</body>
+</html>
