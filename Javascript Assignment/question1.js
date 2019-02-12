@@ -1,0 +1,10 @@
+var amount = prompt("Enter amount");
+document.getElementById("amount").innerHTML=amount;
+var rate = prompt("Enter rate");
+document.getElementById("rate").innerHTML=rate;
+var time = prompt("Enter the number of years ");
+document.getElementById("time").innerHTML=time;
+var si;
+si = (amount*rate*time)/100;
+alert("Simple intreset is "+si);
+document.getElementById("si").innerHTML=si;
