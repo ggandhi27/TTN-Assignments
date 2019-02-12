@@ -33,7 +33,7 @@ for(i=0;i<lis.length;i++){
     if(lis[i]["salary"]>5000){
         rich_employees.push(lis[i]);
     }
-    if(lis[i]["salary"]>1000 && lis[i]["age"]>20){
+    if((lis[i]["salary"]<1000) && (lis[i]["age"]>20)){
         lis[i]["salary"] = lis[i]["salary"]*6;
         poor_employees.push(lis[i]);
     }
@@ -55,14 +55,30 @@ rich_employees.forEach(function (x) {
 rich=rich+"</table>";
 document.getElementById("rich").innerHTML=rich;
  
-var poor;
-poor_employees.forEach(function (x) {
-    console.alert(x);
-});
-
 all  = "<table><thead><th>NAME</th><th>AGE</th><th>SALARY</th><th>DATE OF BIRTH</th></thead>";
 poor_employees.forEach(function (x) {
     all = all + "<tr><td>"+x["name"]+"</td>"+"<td>"+x["age"]+"</td>"+"<td>"+x["salary"]+"</td><"+"<td>"+x["dob"]+"</td></tr>";
+    console.log(x);
 });
 all=all+"</table>";
 document.getElementById("all").innerHTML=all;
+
+var j;
+for(i=0;i<lis.length;i++){
+    for(j=i+1;j<lis.length;j++){
+        if(lis[j]["age"]<lis[j]["age"]){
+            var temp;
+            temp = lis[i];
+            lis[i] = lis[j];
+            lis[j] = temp;
+        }
+    }
+}
+
+
+all  = "<table><thead><th>NAME</th><th>AGE</th><th>SALARY</th><th>DATE OF BIRTH</th></thead>";
+lis.forEach(function (x) {
+    all = all + "<tr><td>"+x["name"]+"</td>"+"<td>"+x["age"]+"</td>"+"<td>"+x["salary"]+"</td><"+"<td>"+x["dob"]+"</td></tr>";
+});
+all=all+"</table>";
+document.getElementById("group").innerHTML=all;
