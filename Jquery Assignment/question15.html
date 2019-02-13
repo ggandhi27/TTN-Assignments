@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 15</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div></div>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url:"sample.txt",
+                async:"false",
+                success:function (result) {
+                    $("div").text(result);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 17</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <img src="image1.jpg" width="500px" height="300px" id="image">
+    <script>
+        var arr = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg"];
+        $(document).ready(function () {
+            var i = 0;
+            while(true){
+                $("#image").attr("src",arr[i]);
+                i = (i+1)%4;
+            }
+        });
+    </script>
+</body>
+</html>

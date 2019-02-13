@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 10</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Hover Here</h1>
+    </div>
+    <select name="sweets" id="sweets" style="display: none">
+        <option>Chocolate</option>
+        <option selected="selected">Candy</option>
+        <option>Taffy</option>
+        <option selected="selected">Caramel</option>
+        <option>Fudge</option>
+        <option>Cookie</option>
+    </select>
+    <script>
+        $(document).ready(function () {
+            $("#container").hover(function () {
+                $("#sweets").show(2000);
+            });
+        });
+    </script>
+</body>
+</html>

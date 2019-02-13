@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 12</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        li{
+            background: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <div style="background: seagreen">
+        <ol>
+            <li>India</li>
+            <li>Pakistan</li>
+            <li>Japan</li>
+            <li>Russia</li>
+        </ol>
+    </div>
+    <p></p>
+    <script>
+        $(document).ready(function () {
+            $("li").on("click",function (e) {
+                e.stopPropagation();
+            });
+            $("div").on("click",function (e) {
+                $("p").text("Event occurred");
+            })
+        });
+    </script>
+</body>
+</html>

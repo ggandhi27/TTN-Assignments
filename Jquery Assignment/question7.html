@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 7</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function (e) {
+                var abc = $("#btn").clone();
+                $("#btn").after(abc);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">clickme</button>
+</body>
+</html>

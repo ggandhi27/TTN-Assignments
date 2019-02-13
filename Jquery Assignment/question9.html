@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 9</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<select name="sweets" id="sweets">
+    <option>Chocolate</option>
+    <option selected="selected">Candy</option>
+    <option>Taffy</option>
+    <option selected="selected">Caramel</option>
+    <option>Fudge</option>
+    <option>Cookie</option>
+</select>
+<div id="container">
+
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#sweets").on("change",function () {
+            var str = "";
+            $( "select option:selected" ).each(function() {
+                str += $(this).text() + " ";
+            });
+            $( "div" ).text( str );
+        });
+    });
+</script>
+</html>

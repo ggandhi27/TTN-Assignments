@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 16</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        table,tr,td,th,thead{
+            border: black solid 2px;
+            padding: 50px;
+            border-collapse: collapse;
+        }
+        .btn{
+            background-image: url("https://img.icons8.com/color/48/000000/cancel.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Remove</th>
+    </thead>
+    <tr>
+        <td>Gaurav Gandhi</td>
+        <td>23</td>
+        <td>15,100</td>
+        <td><button class="btn" id="btn1"></button></td>
+    </tr>
+    <tr>
+        <td>Yatin Ajmani</td>
+        <td>25</td>
+        <td>15,100</td>
+        <td><button class="btn" id="btn2"></button></td>
+    </tr>
+    <tr>
+        <td>Siddarth </td>
+        <td>22</td>
+        <td>15,100</td>
+        <td><button class="btn" id="btn3"></button></td>
+    </tr>
+    <tr>
+        <td>Akshay</td>
+        <td>21</td>
+        <td>15,100</td>
+        <td><button class="btn" id="btn4"></button></td>
+    </tr>
+</table>
+<script>
+        $(document).ready(function () {
+            $("button").on("click",function () {
+                $(this).parent().parent().css("display","none");
+            });
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 8</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            var $el = $("<p id='ele'>Please click me.</p>",{id:"ele"});
+            $("#main").append($el);
+
+            $("#ele").on("click",function (e) {
+                console.log("Element clicked");
+            });
+        });
+    </script>
+</body>
+</html>
