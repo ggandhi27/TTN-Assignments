@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <title>Question 17</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        #slideshow {
+            margin: 50px auto;
+            position: relative;
+            width: 500px;
+            height: 240px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        #slideshow > div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+        #welcome{
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    <img src="image1.jpg" width="500px" height="300px" id="image">
+<div id="slideshow">
+    <div id="welcome">
+        Welcome to the new.
+    </div>
+    <div>
+        <img src="image2.jpg" height="240px" width="500px">
+    </div>
+    <div>
+        <img src="image1.jpg" height="240px" width="500px">
+    </div>
+    <div>
+        <img src="image3.jpg" height="240px" width="500px">
+    </div>
+    <div>
+        <img src="image4.jpeg" height="240px" width="500px">
+    </div>
+</div>
     <script>
         var arr = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg"];
         $(document).ready(function () {
-            var i = 0;
-            while(true){
-                $("#image").attr("src",arr[i]);
-                i = (i+1)%4;
-            }
+            $("#slideshow > div:gt(0)").hide();
+            setInterval(function() {
+                $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+            },  3000);
         });
     </script>
 </body>
