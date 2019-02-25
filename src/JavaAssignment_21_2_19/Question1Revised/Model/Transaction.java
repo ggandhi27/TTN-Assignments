@@ -1,3 +1,4 @@
+package JavaAssignment_21_2_19.Question1Revised.Model;
 
 import java.util.*;
 
@@ -30,12 +31,12 @@ public class Transaction {
     /**
      * 
      */
-    public date dateOfIssue;
+    public Date dateOfIssue;
 
     /**
      * 
      */
-    public date dueDate;
+    public Date dueDate;
 
 
 
