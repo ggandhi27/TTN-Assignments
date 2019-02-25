@@ -14,7 +14,11 @@ class Singleton{
     
     public static Singleton getObj(){
         if(obj==null) {
-            obj = new Singleton();
+            synchronized (Singleton.class) {
+                if (obj == null) {
+                    obj = new Singleton();
+                }
+            }
         }
         return obj;
     }
