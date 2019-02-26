@@ -35,7 +35,7 @@ class WoodenTable extends Table {
 
 
 
-class MetallicTable extends Table implements Furniture {
+class MetallicTable extends Table  {
     
     
     MetallicTable() {

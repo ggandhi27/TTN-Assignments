@@ -1,3 +1,4 @@
+package JavaAssignment_21_2_19.Question1Revised.Model;
 
 import java.util.*;
 
@@ -20,12 +21,12 @@ public class Member {
     /**
      * 
      */
-    public string type;
+    public String type;
 
     /**
      * 
      */
-    public date dateOfMembership;
+    public Date dateOfMembership;
 
     /**
      * 
@@ -40,12 +41,12 @@ public class Member {
     /**
      * 
      */
-    public string name;
+    public String name;
 
     /**
      * 
      */
-    public string address;
+    public String address;
 
 
 

@@ -1,3 +1,4 @@
+package JavaAssignment_21_2_19.Question1Revised.Model;
 
 import java.util.*;
 
@@ -15,12 +16,12 @@ public class Librarian {
     /**
      * 
      */
-    public string name;
+    public String name;
 
     /**
      * 
      */
-    public string password;
+    public String password;
 
 
 

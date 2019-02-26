@@ -30,7 +30,7 @@ class WoodenChair extends Chair {
     
     
 }
-class MetallicChair extends Chair implements Furniture {
+class MetallicChair extends Chair  {
     
     
     MetallicChair() {

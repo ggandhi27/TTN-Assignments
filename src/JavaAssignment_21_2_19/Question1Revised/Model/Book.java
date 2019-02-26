@@ -15,12 +15,12 @@ public class Book {
     /**
      * 
      */
-    public string author;
+    public String author;
 
     /**
      * 
      */
-    public string name;
+    public String name;
 
     /**
      * 
@@ -30,7 +30,7 @@ public class Book {
     /**
      * 
      */
-    public string rackno;
+    public String rackno;
 
     /**
      * 
@@ -40,12 +40,12 @@ public class Book {
     /**
      * 
      */
-    public string status;
+    public String status;
 
     /**
      * 
      */
-    public string edition;
+    public String edition;
 
 
 
