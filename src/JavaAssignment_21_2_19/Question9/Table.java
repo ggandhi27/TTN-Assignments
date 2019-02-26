@@ -1,6 +1,7 @@
 package JavaAssignment_21_2_19.Question9;
 
-abstract class Table {
+abstract class Table implements Furniture{
+    String tableType;
     Table() {
         System.out.println("\nThis is a table");
     }
@@ -9,12 +10,12 @@ abstract class Table {
 
 
 
-class WoodenTable extends Table implements Furniture{
-    String tableType="Wooden";
+class WoodenTable extends Table {
     
     
     WoodenTable() {
         super();
+        tableType = "Wooden";
         System.out.println("This is a " + tableType + " table");
     }
     
@@ -35,10 +36,10 @@ class WoodenTable extends Table implements Furniture{
 
 
 class MetallicTable extends Table implements Furniture {
-    String tableType="Metallic";
     
     
     MetallicTable() {
+        tableType = "Metallic";
         System.out.println("This is a " + tableType + " table");
     }
     
@@ -50,4 +51,6 @@ class MetallicTable extends Table implements Furniture {
     @Override
     public void stressTest() {
         System.out.println("Metallic tables have high resistance to stress");
-    }}
+    }
+}
+

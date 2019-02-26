@@ -1,3 +1,4 @@
+package JavaAssignment_21_2_19.Question1Revised.Model;
 
 import java.util.*;
 
@@ -20,12 +21,12 @@ public class Bill {
     /**
      * 
      */
-    public date date;
+    public Date date;
 
     /**
      * 
      */
-    public id member;
+    public int member;
 
     /**
      * 

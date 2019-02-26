@@ -1,18 +1,19 @@
 package JavaAssignment_21_2_19.Question9;
 
-abstract class Chair {
+abstract class Chair implements Furniture{
+    String chairType;
     Chair()
     {
         System.out.println("\nThis is a chair");
     }
 }
 
-class WoodenChair extends Chair implements Furniture{
-    String chairType="Wooden";
+class WoodenChair extends Chair {
     
     
     WoodenChair() {
         super();
+        chairType = "Wooden";
         System.out.println("This is a " + chairType + " chair");
     }
     
@@ -30,10 +31,10 @@ class WoodenChair extends Chair implements Furniture{
     
 }
 class MetallicChair extends Chair implements Furniture {
-    String chairType="Metallic";
     
     
     MetallicChair() {
+        chairType = "Metallic";
         System.out.println("This is a " + chairType + " chair");
     }
     
