@@ -1,7 +1,5 @@
 package JavaAssignment_21_2_19.Question10;
 
-import java.util.Date;
-
 /**
  * Absract Person class for storing similar details/properties of actors and also similar behavior they share.
  */

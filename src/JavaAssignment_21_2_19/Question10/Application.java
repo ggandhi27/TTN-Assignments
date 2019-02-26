@@ -1,8 +1,6 @@
 package JavaAssignment_21_2_19.Question10;
 
 import java.text.ParseException;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
