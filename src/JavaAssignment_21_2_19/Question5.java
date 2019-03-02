@@ -59,6 +59,8 @@ public class Question5 {
     
         System.out.println("obj1.a :: "+obj1.getA()+" obj1.b :: "+obj1.getB());
         System.out.println("obj3.a :: "+obj3.getA()+" obj3.b :: "+obj3.getB());
-        
+        System.out.println(obj1.toString());
+        System.out.println(obj2.toString());
+        System.out.println(obj3.toString());
     }
 }

@@ -19,9 +19,13 @@ public class Question1 {
         Float sum = new Float(0.0);
     
         Iterator iterator = floatList.iterator();
-        
+        int i = 0;
         while(iterator.hasNext()){
+            if(i > 0) {
+                iterator.remove();
+            }
             sum = sum + (Float) iterator.next();
+            i++;
         }
     
         System.out.println("Sum :: "+sum);

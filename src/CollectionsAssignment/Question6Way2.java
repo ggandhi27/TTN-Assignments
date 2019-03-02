@@ -28,10 +28,17 @@ public class Question6Way2 {
                 return o1.getValue() - o2.getValue();
             }
         });
-    
+        Stack<Map.Entry> st = new Stack<>();
         entryList.forEach((n)->{
             System.out.println(n.getKey()+" ---> "+n.getValue());
+            st.push(n);
         });
+        while(!st.isEmpty()) {
+            Map.Entry n = st.pop();
+            System.out.println(n.getKey()+" ---> "+n.getValue());
+            
+            
+        }
     }
     
 }

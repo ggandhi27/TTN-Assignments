@@ -22,8 +22,8 @@ class SpecialStack {
                 stack.push(n);
                 if(n<minEle){
                     minEle = n;
-                    auxStack.push(minEle);
                 }
+                auxStack.push(minEle);
             }
         }
         else{

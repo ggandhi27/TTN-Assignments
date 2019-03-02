@@ -5,9 +5,7 @@ class Singleton{
     
     private static Singleton obj;
     
-    static{
-        obj = null;
-    }
+    
     private Singleton(){
     
     }

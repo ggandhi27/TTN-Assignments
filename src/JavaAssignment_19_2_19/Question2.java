@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class Question2 {
     public static void main(String[] args) {
-        String str = "this is a string . this string is really amazing . all men in this world loves this string .";
+        String str = "new string being provided to new interfce of string";
         String arr[] = str.split(" ");
         int l;
         l = arr.length;
