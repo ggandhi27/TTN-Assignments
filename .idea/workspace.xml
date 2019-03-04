@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1c0772-3fb4-4632-ae49-728e0ef41aba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/FactoryMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/AbstractFactoryMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/AbstractFactoryMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/AbstractFactoryMain.java">
+        <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/BuilderDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -40,8 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MultiThreadingAssignment/Question10.java" />
-        <option value="$PROJECT_DIR$/src/MultiThreadingAssignment/Question10Again.java" />
         <option value="$PROJECT_DIR$/src/MultiThreadingAssignment/Question11.java" />
         <option value="$PROJECT_DIR$/src/MultiThreadingAssignment/Question12.java" />
         <option value="$PROJECT_DIR$/src/MultiThreadingAssignment/Question13.java" />
@@ -91,6 +88,8 @@
         <option value="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/FactoryMain.java" />
         <option value="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question2.java" />
         <option value="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question1.java" />
+        <option value="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/AbstractFactoryMain.java" />
+        <option value="$PROJECT_DIR$/src/DesignPatterns/Assignment/Question3.java" />
       </list>
     </option>
   </component>
@@ -130,14 +129,13 @@
               <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="FactoryDesignPattern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="FactoryDesignPattern" type="462c0819:PsiDirectoryNode" />
+              <item name="Java8_Assignment" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -148,7 +146,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551675226416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551683502214" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -174,26 +172,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question2">
+  <component name="RunManager" selected="Application.Question3">
     <configuration name="FactoryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesignPatterns.Practice.FactoryDesignPattern.FactoryMain" />
       <module name="TTN-Assignments" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DesignPatterns.Practice.FactoryDesignPattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java8_Assignment.Question10" />
-      <module name="TTN-Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java8_Assignment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -240,13 +225,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Assignment.Question3" />
+      <module name="TTN-Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.Assignment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question3" />
         <item itemvalue="Application.Question2" />
         <item itemvalue="Application.FactoryMain" />
         <item itemvalue="Application.Question12" />
         <item itemvalue="Application.Question11" />
-        <item itemvalue="Application.Question10" />
       </list>
     </recent_temporary>
   </component>
@@ -279,12 +277,12 @@
       <workItem from="1551416195084" duration="2484000" />
       <workItem from="1551434126492" duration="55000" />
       <workItem from="1551526422858" duration="10113000" />
-      <workItem from="1551674563026" duration="625000" />
+      <workItem from="1551674563026" duration="6017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88659000" />
+    <option name="totallyTimeSpent" value="94051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
@@ -407,30 +405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JavaAssignment_21_2_19/Question1/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaAssignment_21_2_19/Question1Revised/Model/Librarian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaAssignment_21_2_19/Question1Revised/Model/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -773,16 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java8_Assignment/Question10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/current/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -833,10 +797,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java8_Assignment/Question10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/AbstractFactoryMain.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Assignment/Question3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="186" column="95" selection-start-line="186" selection-start-column="95" selection-end-line="186" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#2242#2243#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/BuilderDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
