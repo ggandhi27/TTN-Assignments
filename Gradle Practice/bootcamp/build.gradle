@@ -23,3 +23,16 @@ greet.dependsOn hello,intro
 apply plugin:'java';
 
 apply from: 'tasks.gradle'
+
+sourceSets{
+    main{
+        java{
+            srcDirs = ['source/main/java']
+        }
+    }
+    test{
+        java{
+            srcDirs = ['source/test/java']
+        }
+    }
+}
