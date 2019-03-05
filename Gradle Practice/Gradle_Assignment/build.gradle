@@ -28,3 +28,21 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+
+sourceSets{
+    main{
+        java{
+            srcDirs = ['src/main/java']
+        }
+    }
+    test{
+        java{
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+task runMe(type: JavaExec, dependsOn:'classes'){
+    main='com.intelligrape.gradle.Application'
+    classpath = sourceSets.main.runtimeClasspath
+}
