@@ -2,12 +2,13 @@ task abc <<{
     println("abc")
 }
 
-task ddd (dependsOn: abc){
+task ddd (dependsOn: abc) <<{
     println("ddd")
 }
 
-task eee{
+task eee << {
     println("eee")
 }
 
 eee.dependsOn ddd
+

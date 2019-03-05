@@ -18,6 +18,37 @@ task intro(dependsOn: hello) << {
 }
 
 
+buildscript {
+    ext {
+        springBootVersion = '1.5.16.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile('net.sourceforge.nekohtml:nekohtml')
+    runtime('org.springframework.boot:spring-boot-devtools')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+
 greet.dependsOn hello,intro
 
 apply plugin:'java';
@@ -35,4 +66,9 @@ sourceSets{
             srcDirs = ['source/test/java']
         }
     }
+}
+
+task runMe(type: JavaExec, dependsOn:'classes'){
+    main='com.intelligrape.gradle.Application'
+    classpath = sourceSets.main.runtimeClasspath
 }
