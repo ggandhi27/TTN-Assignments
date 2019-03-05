@@ -1,0 +1,13 @@
+task abc <<{
+    println("abc")
+}
+
+task ddd (dependsOn: abc){
+    println("ddd")
+}
+
+task eee{
+    println("eee")
+}
+
+eee.dependsOn ddd
