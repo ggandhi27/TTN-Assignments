@@ -1,0 +1,955 @@
+Script started on 2019-03-05 11:41:10+0530
+*****************************
+* May your code be with you *
+*****************************
+
+
+╭━━━╮╱╱╱╱╭╮╱╱╱╭━━╮╭╮╱╱╱╱╱╱╱╱╭╮╱╱╱╱╭╮
+┃╭━╮┃╱╱╱╱┃┃╱╱╱┃╭╮┃┃┃╱╱╱╱╱╱╱╱┃┃╱╱╱╱┃┃
+┃┃╱╰╋━━┳━╯┣━━╮┃╰╯╰┫┃╭━━┳━━┳━╯┣━━┳━╯┃
+┃┃╱╭┫╭╮┃╭╮┃┃━┫┃╭━╮┃┃┃╭╮┃╭╮┃╭╮┃┃━┫╭╮┃
+┃╰━╯┃╰╯┃╰╯┃┃━┫┃╰━╯┃╰┫╰╯┃╰╯┃╰╯┃┃━┫╰╯┃
+╰━━━┻━━┻━━┻━━╯╰━━━┻━┻━━┻━━┻━━┻━━┻━━╯
+
+[[34m11:41:10[m] gaurav@gaurav[00m:[01;34mscripts[01;31m (gradle)[00m$ [H[2J[[34m11:41:10[m] gaurav@gaurav[00m:[01;34mscripts[01;31m (gradle)[00m$ cd bootcamp/..[Kgit pushcommit -m "Proxy pattern completed"add .[Kstatus[2Ppushcommit -m "Decorator completed"push[Kstatus[1Padd .commit -m "Proxy pattern completed"push[K[3Pcd ..bootcamp/[Kpwd
+/home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/scripts
+[[34m11:41:20[m] gaurav@gaurav[00m:[01;34mscripts[01;31m (gradle)[00m$ cd ..
+[[34m11:41:22[m] gaurav@gaurav[00m:[01;34mGradle Practice[01;31m (gradle)[00m$ l
+[0m[01;34mbootcamp[0m/  [01;34mscripts[0m/
+[[34m11:41:23[m] gaurav@gaurav[00m:[01;34mGradle Practice[01;31m (gradle)[00m$ cd bootcamp/
+[[34m11:41:26[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ [H[2J[[34m11:41:26[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ll
+total 40
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 11:40 [0m[01;34m.[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 11:01 [01;34m..[0m/
+-rw-r--r-- 1 gaurav ttn  372 Mar  5 11:40 build.gradle
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 10:58 [01;34mgradle[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 11:06 [01;34m.gradle[0m/
+-rwxr-xr-x 1 gaurav ttn 5296 Mar  5 10:58 [01;32mgradlew[0m*
+-rw-r--r-- 1 gaurav ttn 2260 Mar  5 10:58 gradlew.bat
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 11:41 [01;34m.idea[0m/
+-rw-r--r-- 1 gaurav ttn  358 Mar  5 10:58 settings.gradle
+[[34m11:41:28[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -[Ktasks
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Compiling /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build.gradle into local compilation cache > Comp[m[143D[1B[2A[0K
+[1m> Configure project :[m[0K
+I'm Gradle
+
+[1m> Task :tasks[m
+
+[1m------------------------------------------------------------[m
+[1mAll tasks runnable from root project[m
+[1m------------------------------------------------------------[m
+
+[1mBuild Setup tasks[m
+[1m-----------------[m
+[32minit[39m[33m - Initializes a new Gradle build.[39m
+[32mwrapper[39m[33m - Generates Gradle wrapper files.[39m
+
+[1mHelp tasks[m
+[1m----------[m
+[32mbuildEnvironment[39m[33m - Displays all buildscript dependencies declared in root project 'bootcamp'.[39m
+[32mcomponents[39m[33m - Displays the components produced by root project 'bootcamp'. [incubating][39m
+[32mdependencies[39m[33m - Displays all dependencies declared in root project 'bootcamp'.[39m
+[32mdependencyInsight[39m[33m - Displays the insight into a specific dependency in root project 'bootcamp'.[39m
+[32mdependentComponents[39m[33m - Displays the dependent components of components in root project 'bootcamp'. [incubating][39m
+[32mhelp[39m[33m - Displays a help message.[39m
+[32mmodel[39m[33m - Displays the configuration model of root project 'bootcamp'. [incubating][39m
+[32mprojects[39m[33m - Displays the sub-projects of root project 'bootcamp'.[39m
+[32mproperties[39m[33m - Displays the properties of root project 'bootcamp'.[39m
+[32mtasks[39m[33m - Displays the tasks runnable from root project 'bootcamp'.[39m
+
+To see all tasks and more detail, run [1mgradle[m[1m [m[1mtasks --all[m
+
+To see more detail about a task, run [1mgradle[m[1m [m[1mhelp --task <task>[m
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> root project > Compiling /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build.gradle into local compilation cache > Comp[m[143D[1B[2A[2K[1B[2K[1A[0m[[34m11:41:37[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle tasks --[Kall
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B[1A* What went wrong:[0K
+Problem configuring task :tasks from command line.
+[33m> [39mUnknown command-line option '-l'.
+
+* Try:
+Run [1mgradle help --task :tasks[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[31;1mBUILD FAILED[0;39m in 0s
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:41:45[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle tasks -all-all
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :tasks[m
+
+[1m------------------------------------------------------------[m
+[1mAll tasks runnable from root project[m
+[1m------------------------------------------------------------[m
+
+[1mBuild Setup tasks[m
+[1m-----------------[m
+[32minit[39m[33m - Initializes a new Gradle build.[39m
+[32mwrapper[39m[33m - Generates Gradle wrapper files.[39m
+
+[1mHelp tasks[m
+[1m----------[m
+[32mbuildEnvironment[39m[33m - Displays all buildscript dependencies declared in root project 'bootcamp'.[39m
+[32mcomponents[39m[33m - Displays the components produced by root project 'bootcamp'. [incubating][39m
+[32mdependencies[39m[33m - Displays all dependencies declared in root project 'bootcamp'.[39m
+[32mdependencyInsight[39m[33m - Displays the insight into a specific dependency in root project 'bootcamp'.[39m
+[32mdependentComponents[39m[33m - Displays the dependent components of components in root project 'bootcamp'. [incubating][39m
+[32mhelp[39m[33m - Displays a help message.[39m
+[32mmodel[39m[33m - Displays the configuration model of root project 'bootcamp'. [incubating][39m
+[32mprojects[39m[33m - Displays the sub-projects of root project 'bootcamp'.[39m
+[32mproperties[39m[33m - Displays the properties of root project 'bootcamp'.[39m
+[32mtasks[39m[33m - Displays the tasks runnable from root project 'bootcamp'.[39m
+
+[1mOther tasks[m
+[1m-----------[m
+[32mgreet[39m
+[32mhello[39m
+[32mintro[39m
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:41:49[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle hello
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :hello[m
+Hello
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:43:17[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ l[K[H[2J[[34m11:43:17[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle hello
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :hello[m
+Hello
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:48:02[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle o[Kinto[Krp[Ko
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :hello[m
+Hello
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:50:09[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle intro[C[Chello[C[C[C hellot helloa hellos hellok hello[C hello
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1A[0K
+[1m> Task :tasks[m
+
+[1m------------------------------------------------------------[m
+[1mAll tasks runnable from root project[m
+[1m------------------------------------------------------------[m
+
+[1mBuild Setup tasks[m
+[1m-----------------[m
+[32minit[39m[33m - Initializes a new Gradle build.[39m
+[32mwrapper[39m[33m - Generates Gradle wrapper files.[39m
+
+[1mHelp tasks[m
+[1m----------[m
+[32mbuildEnvironment[39m[33m - Displays all buildscript dependencies declared in root project 'bootcamp'.[39m
+[32mcomponents[39m[33m - Displays the components produced by root project 'bootcamp'. [incubating][39m
+[32mdependencies[39m[33m - Displays all dependencies declared in root project 'bootcamp'.[39m
+[32mdependencyInsight[39m[33m - Displays the insight into a specific dependency in root project 'bootcamp'.[39m
+[32mdependentComponents[39m[33m - Displays the dependent components of components in root project 'bootcamp'. [incubating][39m
+[32mhelp[39m[33m - Displays a help message.[39m
+[32mmodel[39m[33m - Displays the configuration model of root project 'bootcamp'. [incubating][39m
+[32mprojects[39m[33m - Displays the sub-projects of root project 'bootcamp'.[39m
+[32mproperties[39m[33m - Displays the properties of root project 'bootcamp'.[39m
+[32mtasks[39m[33m - Displays the tasks runnable from root project 'bootcamp'.[39m
+
+To see all tasks and more detail, run [1mgradle[m[1m [m[1mtasks --all[m
+
+To see more detail about a task, run [1mgradle[m[1m [m[1mhelp --task <task>[m
+
+[1m> Task :hello[m
+Hello
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:51:51[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle task  hello[K[K[K[K[K[Kintro
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :tasks[m
+
+[1m------------------------------------------------------------[m
+[1mAll tasks runnable from root project[m
+[1m------------------------------------------------------------[m
+
+[1mBuild Setup tasks[m
+[1m-----------------[m
+[32minit[39m[33m - Initializes a new Gradle build.[39m
+[32mwrapper[39m[33m - Generates Gradle wrapper files.[39m
+
+[1mHelp tasks[m
+[1m----------[m
+[32mbuildEnvironment[39m[33m - Displays all buildscript dependencies declared in root project 'bootcamp'.[39m
+[32mcomponents[39m[33m - Displays the components produced by root project 'bootcamp'. [incubating][39m
+[32mdependencies[39m[33m - Displays all dependencies declared in root project 'bootcamp'.[39m
+[32mdependencyInsight[39m[33m - Displays the insight into a specific dependency in root project 'bootcamp'.[39m
+[32mdependentComponents[39m[33m - Displays the dependent components of components in root project 'bootcamp'. [incubating][39m
+[32mhelp[39m[33m - Displays a help message.[39m
+[32mmodel[39m[33m - Displays the configuration model of root project 'bootcamp'. [incubating][39m
+[32mprojects[39m[33m - Displays the sub-projects of root project 'bootcamp'.[39m
+[32mproperties[39m[33m - Displays the properties of root project 'bootcamp'.[39m
+[32mtasks[39m[33m - Displays the tasks runnable from root project 'bootcamp'.[39m
+
+To see all tasks and more detail, run [1mgradle[m[1m [m[1mtasks --all[m
+
+To see more detail about a task, run [1mgradle[m[1m [m[1mhelp --task <task>[m
+
+[1m> Task :hello[m
+Hello
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:51:59[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ [H[2J[[34m11:51:59[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle task intro hello
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :tasks[m[8D[1B[2A[0K
+[1m> Task :tasks[m
+
+[1m------------------------------------------------------------[m
+[1mAll tasks runnable from root project[m
+[1m------------------------------------------------------------[m
+
+[1mBuild Setup tasks[m
+[1m-----------------[m
+[32minit[39m[33m - Initializes a new Gradle build.[39m
+[32mwrapper[39m[33m - Generates Gradle wrapper files.[39m
+
+[1mHelp tasks[m
+[1m----------[m
+[32mbuildEnvironment[39m[33m - Displays all buildscript dependencies declared in root project 'bootcamp'.[39m
+[32mcomponents[39m[33m - Displays the components produced by root project 'bootcamp'. [incubating][39m
+[32mdependencies[39m[33m - Displays all dependencies declared in root project 'bootcamp'.[39m
+[32mdependencyInsight[39m[33m - Displays the insight into a specific dependency in root project 'bootcamp'.[39m
+[32mdependentComponents[39m[33m - Displays the dependent components of components in root project 'bootcamp'. [incubating][39m
+[32mhelp[39m[33m - Displays a help message.[39m
+[32mmodel[39m[33m - Displays the configuration model of root project 'bootcamp'. [incubating][39m
+[32mprojects[39m[33m - Displays the sub-projects of root project 'bootcamp'.[39m
+[32mproperties[39m[33m - Displays the properties of root project 'bootcamp'.[39m
+[32mtasks[39m[33m - Displays the tasks runnable from root project 'bootcamp'.[39m
+
+To see all tasks and more detail, run [1mgradle[m[1m [m[1mtasks --all[m
+
+To see more detail about a task, run [1mgradle[m[1m [m[1mhelp --task <task>[m
+
+[1m> Task :hello[m
+Hello
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :tasks[m[8D[1B[2A[2K[1B[2K[1A[0m[[34m11:52:15[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ [H[2J[[34m11:52:15[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle hello
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :hello[m[8D[1B[2A[0K
+[1m> Task :hello[m
+Hello
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :hello[m[8D[1B[2A[2K[1B[2K[1A[0m[[34m11:53:11[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle hello[K[K[K[K[Kintro
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :hello[m
+Hello
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:53:47[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle intro[K[K[K[K[Kgreet
+[0m
+[1m> Configure project :[m
+I'm Gradle
+
+[1m> Task :hello[m
+Hello
+
+[1m> Task :greet[m
+Welcome Mr. X
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:53:55[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle greetintrohello
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Compiling /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build.gradle into local compilation cache > Comp[m[143D[1B[2A[0K
+[1m> Task :hello[m[0K
+Hello
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> root project > Compiling /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build.gradle into local compilation cache > Comp[m[143D[1B[2A[2K[1B[2K[1A[0m[[34m11:54:30[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle hellogreetintro
+[0m
+[1m> Task :hello[m
+Hello
+
+[1m> Task :intro[m
+I'm Gradle
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:54:35[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle introhellogreet
+[0m
+[1m> Task :hello[m
+Hello
+
+[1m> Task :intro[m
+I'm Gradle
+
+[1m> Task :greet[m
+Welcome Mr. X
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+3 actionable tasks: 3 executed
+[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m11:54:39[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle greetintrohellogreethellointrogreet[K./gradle
+gradle/  gradlew  
+[[34m11:54:39[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ./gradlew 
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :help[m[7D[1B[2A[0K
+[1m> Task :help[m
+
+Welcome to Gradle 4.10.2.
+
+To run a build, run [1mgradlew[m[1m [m[1m<task> ...[m
+
+To see a list of available tasks, run [1mgradlew[m[1m [m[1mtasks[m
+
+To see a list of command-line options, run [1mgradlew[m[1m [m[1m--help[m
+
+To see more detail about a task, run [1mgradlew[m[1m [m[1mhelp --task <task>[m
+
+For troubleshooting, visit [1mhttps://help.gradle.org[m
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :help[m[7D[1B[2A[2K[1B[2K[1A[0m[[34m12:24:41[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle list
+[0m
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'list' not found in root project 'bootcamp'. Some candidates are: 'test'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m12:24:58[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ l[H[2J[[34m12:24:58[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ l[Kit[K[Kgit add[K[K[Kstatus
+On branch gradle
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .idea/vcs.xml[m
+	[32mnew file:   tasks.gradle[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   ../../.idea/workspace.xml[m
+	[31mmodified:   tasks.gradle[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31m.idea/encodings.xml[m
+	[31m.idea/gradle.xml[m
+	[31m.idea/misc.xml[m
+	[31m.idea/workspace.xml[m
+	[31mbuild.gradle[m
+	[31mgradle/[m
+	[31mgradlew[m
+	[31mgradlew.bat[m
+	[31msettings.gradle[m
+	[31m../scripts/[m
+
+[[34m12:38:57[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git add .
+[[34m12:39:00[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git commit 0m[K[K-m ""G"r"a"d"k"e" "[1P"[1P"[1P"l"e" "b"r"a"n"h"c"[1P"[1P"c"h" "c"o"m"[1P"[1P"r"a"[1P"e"a"t"e"d"
+[gradle 31461ac] Gradle branch created
+ 22 files changed, 582 insertions(+)
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/fileChanges/last-build.bin
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/fileHashes/fileHashes.bin
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/fileHashes/fileHashes.lock
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/gc.properties
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/taskHistory/taskHistory.bin
+ create mode 100644 Gradle Practice/bootcamp/.gradle/4.10.2/taskHistory/taskHistory.lock
+ create mode 100644 Gradle Practice/bootcamp/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+ create mode 100644 Gradle Practice/bootcamp/.gradle/buildOutputCleanup/cache.properties
+ create mode 100644 Gradle Practice/bootcamp/.gradle/buildOutputCleanup/outputFiles.bin
+ create mode 100644 Gradle Practice/bootcamp/.gradle/vcs-1/gc.properties
+ create mode 100644 Gradle Practice/bootcamp/.idea/encodings.xml
+ create mode 100644 Gradle Practice/bootcamp/.idea/gradle.xml
+ create mode 100644 Gradle Practice/bootcamp/.idea/misc.xml
+ create mode 100644 Gradle Practice/bootcamp/.idea/vcs.xml
+ create mode 100644 Gradle Practice/bootcamp/.idea/workspace.xml
+ create mode 100644 Gradle Practice/bootcamp/build.gradle
+ create mode 100644 Gradle Practice/bootcamp/gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 Gradle Practice/bootcamp/gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 Gradle Practice/bootcamp/gradlew
+ create mode 100644 Gradle Practice/bootcamp/gradlew.bat
+ create mode 100644 Gradle Practice/bootcamp/settings.gradle
+ create mode 100644 Gradle Practice/bootcamp/tasks.gradle
+[[34m12:39:16[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git puh[Ksh --set-upstream origin gradle
+Counting objects: 34, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/25)   Compressing objects:   8% (2/25)   Compressing objects:  12% (3/25)   Compressing objects:  16% (4/25)   Compressing objects:  20% (5/25)   Compressing objects:  24% (6/25)   Compressing objects:  28% (7/25)   Compressing objects:  32% (8/25)   Compressing objects:  36% (9/25)   Compressing objects:  40% (10/25)   Compressing objects:  44% (11/25)   Compressing objects:  48% (12/25)   Compressing objects:  52% (13/25)   Compressing objects:  56% (14/25)   Compressing objects:  60% (15/25)   Compressing objects:  64% (16/25)   Compressing objects:  68% (17/25)   Compressing objects:  72% (18/25)   Compressing objects:  76% (19/25)   Compressing objects:  80% (20/25)   Compressing objects:  84% (21/25)   Compressing objects:  88% (22/25)   Compressing objects:  92% (23/25)   Compressing objects:  96% (24/25)   Compressing objects: 100% (25/25)   Compressing objects: 100% (25/25), done.
+Writing objects:   2% (1/34)   Writing objects:   5% (2/34)   Writing objects:   8% (3/34)   Writing objects:  11% (4/34)   Writing objects:  14% (5/34)   Writing objects:  17% (6/34)   Writing objects:  20% (7/34)   Writing objects:  23% (8/34)   Writing objects:  26% (9/34)   Writing objects:  32% (11/34)   Writing objects:  35% (12/34)   Writing objects:  38% (13/34)   Writing objects:  41% (14/34)   Writing objects:  44% (15/34)   Writing objects:  47% (16/34)   Writing objects:  50% (17/34)   Writing objects:  52% (18/34)   Writing objects:  55% (19/34)   Writing objects:  58% (20/34)   Writing objects:  61% (21/34)   Writing objects:  64% (22/34)   Writing objects:  67% (23/34)   Writing objects:  70% (24/34)   Writing objects:  73% (25/34)   Writing objects:  76% (26/34)   Writing objects:  79% (27/34)   Writing objects:  82% (28/34)   Writing objects:  85% (29/34)   Writing objects:  88% (30/34)   Writing objects:  91% (31/34)   Writing objects:  94% (32/34)   Writing objects:  97% (33/34)   Writing objects: 100% (34/34)   Writing objects: 100% (34/34), 58.93 KiB | 5.89 MiB/s, done.
+Total 34 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 1 local object.[K
+remote: 
+remote: Create a pull request for 'gradle' on GitHub by visiting:[K
+remote:      https://github.com/ggandhi27/TTN-Assignments/pull/new/gradle[K
+remote: 
+To github.com:ggandhi27/TTN-Assignments.git
+ * [new branch]      gradle -> gradle
+Branch 'gradle' set up to track remote branch 'gradle' from 'origin'.
+[[34m12:39:38[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git push --set-upstream origin gradle[H[2J[[34m12:39:38[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git push --set-upstream origin gradle[Kgit status
+On branch gradle
+Your branch is up to date with 'origin/gradle'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   source/main/java/com/intelligrape/gradle/Application.java[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   ../../.idea/workspace.xml[m
+	[31mmodified:   .gradle/4.10.2/fileHashes/fileHashes.bin[m
+	[31mmodified:   .gradle/4.10.2/fileHashes/fileHashes.lock[m
+	[31mmodified:   .idea/workspace.xml[m
+	[31mmodified:   build.gradle[m
+	[31mmodified:   source/main/java/com/intelligrape/gradle/Application.java[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mout/[m
+	[31m../scripts/[m
+
+[[34m12:49:53[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gi a[K[K[Kit add .
+[[34m12:49:58[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ot[K[Kgit commit -m ""f"i"l"e"s" "a"[1P"[1P"[1P"[1P"[1P"[1P"[1P"S"o"u"r"c"e" "d"i"r"e"c"t"o"r"i"e"s" "c"h"a"n"h"e"s"[1P"[1P"[1P"g"e"d"
+[gradle 285983c] Source directories changed
+ 6 files changed, 76 insertions(+), 11 deletions(-)
+ create mode 100644 Gradle Practice/bootcamp/out/production/classes/com/intelligrape/gradle/Application.class
+ create mode 100644 Gradle Practice/bootcamp/source/main/java/com/intelligrape/gradle/Application.java
+[[34m12:50:15[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ git push origign [K[K[Kn gradle
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   3% (1/26)   Writing objects:   7% (2/26)   Writing objects:  11% (3/26)   Writing objects:  15% (4/26)   Writing objects:  19% (5/26)   Writing objects:  23% (6/26)   Writing objects:  26% (7/26)   Writing objects:  30% (8/26)   Writing objects:  34% (9/26)   Writing objects:  38% (10/26)   Writing objects:  42% (11/26)   Writing objects:  46% (12/26)   Writing objects:  50% (13/26)   Writing objects:  53% (14/26)   Writing objects:  57% (15/26)   Writing objects:  61% (16/26)   Writing objects:  65% (17/26)   Writing objects:  69% (18/26)   Writing objects:  73% (19/26)   Writing objects:  76% (20/26)   Writing objects:  80% (21/26)   Writing objects:  84% (22/26)   Writing objects:  88% (23/26)   Writing objects:  92% (24/26)   Writing objects:  96% (25/26)   Writing objects: 100% (26/26)   Writing objects: 100% (26/26), 2.82 KiB | 1.41 MiB/s, done.
+Total 26 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To github.com:ggandhi27/TTN-Assignments.git
+   31461ac..285983c  gradle -> gradle
+[[34m12:50:41[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -q run
+[0mMddd
+eee
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2AHello Grade[0K
+[1B[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :compileJava[m[14D[1B[2A[2K[1B[2K[1A[0m[[34m12:55:54[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ Mgradle -q runMe
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2Addd[0K
+eee[0K
+Hello Grade
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> root project[m[14D[1B[2A[2K[1B[2K[1A[0m[[34m12:55:58[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -q build
+[0mddd
+eee
+
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [0s][m[35D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[0K[26D[2B[2A[2K[1B[2K[1A[0m[[34m12:56:48[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -q buildrunMe
+[0mddd
+eee
+
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :runMe[m[0K[8D[1B[2AHello Gradle[0K
+[1B[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :runMe[m[8D[1B[2A[2K[1B[2K[1A[0m[[34m12:57:08[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -q runMebuild
+[0m
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[0K[26D[1B[1A[2K[0m[[34m12:57:29[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -q buildrunMebuildrunMe
+[0m
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B[1AHello Gradle[0K
+[0K
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :runMe[m[8D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[0K[26D[2B[2A[2K[1B[2K[1A[0m[[34m12:57:33[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ll
+total 56
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 11:01 [01;34m..[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34mbuild[0m/
+-rw-r--r-- 1 gaurav ttn  756 Mar  5 12:55 build.gradle
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:37 [01;34mgradle[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 11:06 [01;34m.gradle[0m/
+-rwxr-xr-x 1 gaurav ttn 5296 Mar  5 10:58 [01;32mgradlew[0m*
+-rw-r--r-- 1 gaurav ttn 2260 Mar  5 10:58 gradlew.bat
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:57 [01;34m.idea[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:49 [01;34mout[0m/
+-rw-r--r-- 1 gaurav ttn  358 Mar  5 10:58 settings.gradle
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:45 [01;34msource[0m/
+-rw-r--r-- 1 gaurav ttn  142 Mar  5 12:57 tasks.gradle
+[[34m13:03:20[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ jaa[Kca [K[K[Kva -cp c[Ksource/
+main/ test/ 
+[[34m13:03:20[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ java -cp source/main/c[Kjava/com/intelligrape/gradle/A[K
+Usage: java [-options] class [args...]
+           (to execute a class)
+   or  java [-options] -jar jarfile [args...]
+           (to execute a jar file)
+where options include:
+    -d32	  use a 32-bit data model if available
+    -d64	  use a 64-bit data model if available
+    -server	  to select the "server" VM
+                  The default VM is server,
+                  because you are running on a server-class machine.
+
+
+    -cp <class search path of directories and zip/jar files>
+    -classpath <class search path of directories and zip/jar files>
+                  A : separated list of directories, JAR archives,
+                  and ZIP archives to search for class files.
+    -D<name>=<value>
+                  set a system property
+    -verbose:[class|gc|jni]
+                  enable verbose output
+    -version      print product version and exit
+    -version:<value>
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  require the specified version to run
+    -showversion  print product version and continue
+    -jre-restrict-search | -no-jre-restrict-search
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  include/exclude user private JREs in the version search
+    -? -help      print this help message
+    -X            print help on non-standard options
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  enable assertions with specified granularity
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  disable assertions with specified granularity
+    -esa | -enablesystemassertions
+                  enable system assertions
+    -dsa | -disablesystemassertions
+                  disable system assertions
+    -agentlib:<libname>[=<options>]
+                  load native agent library <libname>, e.g. -agentlib:hprof
+                  see also, -agentlib:jdwp=help and -agentlib:hprof=help
+    -agentpath:<pathname>[=<options>]
+                  load native agent library by full pathname
+    -javaagent:<jarpath>[=<options>]
+                  load Java programming language agent, see java.lang.instrument
+    -splash:<imagepath>
+                  show splash screen with specified image
+See http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.
+[[34m13:07:00[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ [H[2J[[34m13:07:00[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ cd source/main/java/com/intelligrape/gradle/
+[[34m13:07:07[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ ll
+total 12
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:48 [01;34m..[0m/
+-rw-r--r-- 1 gaurav ttn  158 Mar  5 12:57 Application.java
+[[34m13:07:08[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ jaca[K[Kva -cp A[K[K[K[K[K[K[K[K[K[Kgradle -q build
+[0m
+[1m------------------------------------------------------------[m
+[1mRoot project[m
+[1m------------------------------------------------------------[m
+
+[32mclasspath[39m
+[33mNo dependencies[39m
+
+A web-based, searchable dependency report is available by adding the [1m--scan[m option.
+[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m13:07:26[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ gradle -q build --scan
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > build-scan-plugin-1.16.pom[m[92D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1[m[0K[63D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve files of :classpath > build-scan-plugin-1.16.jar > 35 KB/1.05 MB downloaded[m[100D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project > Resolve files of :classpath > build-scan-plugin-1.16.jar > 766 KB/1.05 MB downloaded[m[101D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [3s][m[35D[1B[1m> root project[m[14D[1B[2A[0K
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'build' is ambiguous in root project 'gradle'. Candidates are: 'buildEnvironment', 'buildScanPublishPrevious'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 4s
+[0K
+[0K
+[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [3s][m[37D[1B> IDLE[6D[1B[2APublishing a build scan to scans.gradle.com requires accepting the Gradle Terms of Service defined at https://gradle.com/terms-of-service. Do you accept these terms? [yes, no]
+[2Kyes
+
+[0K
+[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [3s][m[37D[1B> IDLE[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [3s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [16s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [17s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [18s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [21s][m[38D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[0K[26D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0m[[34m13:08:00[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ [H[2J[[34m13:08:00[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ cd -
+/home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp
+[[34m13:08:11[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ p[K[H[2J[[34m13:08:11[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ll
+total 56
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 11:01 [01;34m..[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34mbuild[0m/
+-rw-r--r-- 1 gaurav ttn  756 Mar  5 12:55 build.gradle
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:37 [01;34mgradle[0m/
+drwx------ 5 gaurav ttn 4096 Mar  5 13:07 [01;34m.gradle[0m/
+-rwxr-xr-x 1 gaurav ttn 5296 Mar  5 10:58 [01;32mgradlew[0m*
+-rw-r--r-- 1 gaurav ttn 2260 Mar  5 10:58 gradlew.bat
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:57 [01;34m.idea[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:49 [01;34mout[0m/
+-rw-r--r-- 1 gaurav ttn  358 Mar  5 10:58 settings.gradle
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:45 [01;34msource[0m/
+-rw-r--r-- 1 gaurav ttn  142 Mar  5 12:57 tasks.gradle
+[[34m13:08:16[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ cd build/
+[[34m13:08:19[m] gaurav@gaurav[00m:[01;34mbuild[01;31m (gradle)[00m$ ll
+total 20
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [0m[01;34m.[0m/
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [01;34m..[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [01;34mclasses[0m/
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:56 [01;34mlibs[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:56 [01;34mtmp[0m/
+[[34m13:08:20[m] gaurav@gaurav[00m:[01;34mbuild[01;31m (gradle)[00m$ cd ca[Klasses/
+[[34m13:08:23[m] gaurav@gaurav[00m:[01;34mclasses[01;31m (gradle)[00m$ ll
+total 12
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [0m[01;34m.[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34m..[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [01;34mjava[0m/
+[[34m13:08:24[m] gaurav@gaurav[00m:[01;34mclasses[01;31m (gradle)[00m$ cd java/main/com/intelligrape/gradle/
+[[34m13:08:27[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ [H[2J[[34m13:08:27[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ ll
+total 12
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:57 [01;34m..[0m/
+-rw-r--r-- 1 gaurav ttn  585 Mar  5 12:57 Application.class
+[[34m13:08:28[m] gaurav@gaurav[00m:[01;34mgradle[01;31m (gradle)[00m$ jaava[K[K[Kva -cp A[K[K[K[K[K[K[K[K[K[Kcd -
+/home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build/classes
+[[34m13:08:49[m] gaurav@gaurav[00m:[01;34mclasses[01;31m (gradle)[00m$ java -cp bu[K[K[K[K[K[K[K[K[K[K[Kll
+total 12
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [0m[01;34m.[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34m..[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [01;34mjava[0m/
+[[34m13:09:00[m] gaurav@gaurav[00m:[01;34mclasses[01;31m (gradle)[00m$ cd ..
+[[34m13:09:01[m] gaurav@gaurav[00m:[01;34mbuild[01;31m (gradle)[00m$ ll
+total 20
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [0m[01;34m.[0m/
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [01;34m..[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:55 [01;34mclasses[0m/
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:56 [01;34mlibs[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:56 [01;34mtmp[0m/
+[[34m13:09:02[m] gaurav@gaurav[00m:[01;34mbuild[01;31m (gradle)[00m$ cd ..
+[[34m13:09:04[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ l[H[2J[[34m13:09:04[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ lll[K
+total 56
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 11:01 [01;34m..[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34mbuild[0m/
+-rw-r--r-- 1 gaurav ttn  756 Mar  5 12:55 build.gradle
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:37 [01;34mgradle[0m/
+drwx------ 5 gaurav ttn 4096 Mar  5 13:07 [01;34m.gradle[0m/
+-rwxr-xr-x 1 gaurav ttn 5296 Mar  5 10:58 [01;32mgradlew[0m*
+-rw-r--r-- 1 gaurav ttn 2260 Mar  5 10:58 gradlew.bat
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 12:57 [01;34m.idea[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:49 [01;34mout[0m/
+-rw-r--r-- 1 gaurav ttn  358 Mar  5 10:58 settings.gradle
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:45 [01;34msource[0m/
+-rw-r--r-- 1 gaurav ttn  142 Mar  5 12:57 tasks.gradle
+[[34m13:09:07[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ java -cp build/classes/java/main/com/intelligrape/gradle/Application
+Usage: java [-options] class [args...]
+           (to execute a class)
+   or  java [-options] -jar jarfile [args...]
+           (to execute a jar file)
+where options include:
+    -d32	  use a 32-bit data model if available
+    -d64	  use a 64-bit data model if available
+    -server	  to select the "server" VM
+                  The default VM is server,
+                  because you are running on a server-class machine.
+
+
+    -cp <class search path of directories and zip/jar files>
+    -classpath <class search path of directories and zip/jar files>
+                  A : separated list of directories, JAR archives,
+                  and ZIP archives to search for class files.
+    -D<name>=<value>
+                  set a system property
+    -verbose:[class|gc|jni]
+                  enable verbose output
+    -version      print product version and exit
+    -version:<value>
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  require the specified version to run
+    -showversion  print product version and continue
+    -jre-restrict-search | -no-jre-restrict-search
+                  Warning: this feature is deprecated and will be removed
+                  in a future release.
+                  include/exclude user private JREs in the version search
+    -? -help      print this help message
+    -X            print help on non-standard options
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  enable assertions with specified granularity
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  disable assertions with specified granularity
+    -esa | -enablesystemassertions
+                  enable system assertions
+    -dsa | -disablesystemassertions
+                  disable system assertions
+    -agentlib:<libname>[=<options>]
+                  load native agent library <libname>, e.g. -agentlib:hprof
+                  see also, -agentlib:jdwp=help and -agentlib:hprof=help
+    -agentpath:<pathname>[=<options>]
+                  load native agent library by full pathname
+    -javaagent:<jarpath>[=<options>]
+                  load Java programming language agent, see java.lang.instrument
+    -splash:<imagepath>
+                  show splash screen with specified image
+See http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.
+[[34m13:09:18[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ [H[2J[[34m13:09:18[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ java -cp build/classes/java/main/com/intelligrape/gradle/Application[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PApplication.Application[1Pgradle.Application.gradle.Application[C[1Pintelligrape.gradle.Application.intelligrape.gradle.Application com.intelligrape.gradle.Application
+Hello Gradle
+[[34m13:09:52[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ll
+total 56
+drwxr-xr-x 8 gaurav ttn 4096 Mar  5 12:57 [0m[01;34m.[0m/
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 11:01 [01;34m..[0m/
+drwxr-xr-x 5 gaurav ttn 4096 Mar  5 12:56 [01;34mbuild[0m/
+-rw-r--r-- 1 gaurav ttn  756 Mar  5 12:55 build.gradle
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:37 [01;34mgradle[0m/
+drwx------ 5 gaurav ttn 4096 Mar  5 13:07 [01;34m.gradle[0m/
+-rwxr-xr-x 1 gaurav ttn 5296 Mar  5 10:58 [01;32mgradlew[0m*
+-rw-r--r-- 1 gaurav ttn 2260 Mar  5 10:58 gradlew.bat
+drwxr-xr-x 2 gaurav ttn 4096 Mar  5 13:24 [01;34m.idea[0m/
+drwxr-xr-x 3 gaurav ttn 4096 Mar  5 12:49 [01;34mout[0m/
+-rw-r--r-- 1 gaurav ttn  358 Mar  5 10:58 settings.gradle
+drwxr-xr-x 4 gaurav ttn 4096 Mar  5 12:45 [01;34msource[0m/
+-rw-r--r-- 1 gaurav ttn  142 Mar  5 12:57 tasks.gradle
+[[34m13:24:48[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ vim build
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;37r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[37;1H"build" is a directory[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m" ============================================================================
+" Netrw Directory Listing                                        [m[36m(netrw v156)[m
+[34m"   /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build
+"   Sorted by[m[38;5;130m      name[m
+[34m"   Sort sequence:[m[38;5;130m [\/]$[m[34m,[m[38;5;130m\<core\%(\.\d\+\)\=\>[m[34m,[m[38;5;130m\.h$[m[34m,[m[38;5;130m\.c$[m[34m,[m[38;5;130m\.cpp$[m[34m,[m[38;5;130m\~\=\*$[m[34m,[m[38;5;130m*[m[34m,[m[38;5;130m\.o$[m[34m,[m[38;5;130m\.obj$[m[34m,[m[38;5;130m\.info$[m[34m,[m[38;5;130m\.swp$[m[34m,[m[38;5;130m\.bak$[m[34m,[m[38;5;130m\~$[m
+[34m"   Quick Help: [m[36m<F1>[m[35m:[mhelp  [36m-[m[35m:[mgo up dir  [36mD[m[35m:[mdelete  [36mR[m[35m:[mrename  [36ms[m[35m:[msort-by  [36mx[m[35m:[mspecial
+[34m" ==============================================================================[m
+[4m[34m..[m[4m[36m/[m[4m                                                                                                                                             [m[9;1H[34m.[m[36m/[m
+[34mclasses[m[36m/[m
+[34mlibs[m[36m/[m
+[34mtmp[m[36m/[m
+[94m~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [28;1H~                                                                                                                                               [29;1H~                                                                                                                                               [30;1H~                                                                                                                                               [31;1H~                                                                                                                                               [32;1H~                                                                                                                                               [33;1H~                                                                                                                                               [34;1H~                                                                                                                                               [35;1H~                                                                                                                                               [36;1H~                                                                                                                                               [m[37;127H8,1[11CAll[8;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m" ============================================================================
+" Netrw Directory Listing                                        [m[1m[96m(netrw v156)[m
+[96m"   /home/ttn/Git Repositories/TTN-Assignments/Gradle Practice/bootcamp/build
+"   Sorted by[m[93m      name[m
+[96m"   Sort sequence:[m[93m [\/]$[m[96m,[m[93m\<core\%(\.\d\+\)\=\>[m[96m,[m[93m\.h$[m[96m,[m[93m\.c$[m[96m,[m[93m\.cpp$[m[96m,[m[93m\~\=\*$[m[96m,[m[93m*[m[96m,[m[93m\.o$[m[96m,[m[93m\.obj$[m[96m,[m[93m\.info$[m[96m,[m[93m\.swp$[m[96m,[m[93m\.bak$[m[96m,[m[93m\~$[m
+[96m"   Quick Help: [m[1m[96m<F1>[m[38;5;224m:[mhelp  [1m[96m-[m[38;5;224m:[mgo up dir  [1m[96mD[m[38;5;224m:[mdelete  [1m[96mR[m[38;5;224m:[mrename  [1m[96ms[m[38;5;224m:[msort-by  [1m[96mx[m[38;5;224m:[mspecial
+[96m" ==============================================================================[m
+[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[9;1H[38;5;159m.[m[1m[96m/[m
+[38;5;159mclasses[m[1m[96m/[m
+[38;5;159mlibs[m[1m[96m/[m
+[38;5;159mtmp[m[1m[96m/[m
+[94m~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [28;1H~                                                                                                                                               [29;1H~                                                                                                                                               [30;1H~                                                                                                                                               [31;1H~                                                                                                                                               [32;1H~                                                                                                                                               [33;1H~                                                                                                                                               [34;1H~                                                                                                                                               [35;1H~                                                                                                                                               [36;1H~                                                                                                                                               [m[37;127H8,1[11CAll"build" is a directory[8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mclasses[m[1m[4m[96m/[m[4m                                                                                                                                        [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;78H[96m/classes[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1H[38;5;159mjava[m[1m[96m/[m[10;6H[K[11;1H[94m~                                                                                                                                               [12;1H~                                                                                                                                               [m[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mjava[m[1m[4m[96m/[m[4m                                                                                                                                           [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;86H[96m/java[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1H[38;5;159mmain[m[1m[96m/[m[10;6H[K[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mmain[m[1m[4m[96m/[m[4m                                                                                                                                           [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;91H[96m/main[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1H[38;5;159mcom[m[1m[96m/[m[10;5H[K[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mcom[m[1m[4m[96m/[m[4m                                                                                                                                            [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;96H[96m/com[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1H[38;5;159mintelligrape[m[1m[96m/[m[10;14H[K[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mintelligrape[m[1m[4m[96m/[m[4m                                                                                                                                   [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;100H[96m/intelligrape[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1H[38;5;159mgradle[m[1m[96m/[m[10;8H[K[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4m[38;5;159mgradle[m[1m[4m[96m/[m[4m                                                                                                                                         [m[37;127H10,1[10;1H[?25h[?2004h[?25l[3;113H[96m/gradle[m[8;1H[4m[38;5;159m..[m[1m[4m[96m/[m[4m                                                                                                                                             [m[10;1HApplication.class[10;18H[K[37;127H8,1 [8;1H[?25h[?25l[37;117H~@k[8;1H[37;117H   [9;1H[8;1H[38;5;159m..[m[1m[96m/[m[8;4H[K[9;1H[4m[38;5;159m.[m[1m[4m[96m/[m[4m                                                                                                                                              [m[37;127H9[9;1H[?25h[?25l[37;117H~@k[9;1H[37;117H   [10;1H[9;1H[38;5;159m.[m[1m[96m/[m[9;3H[K[10;1H[4mApplication.class                                                                                                                               [m[37;127H10,1[10;1H[?25h[?2004h[?25l[37;1H<ories/TTN-Assignments/Gradle Practice/bootcamp/build/classes/java/main/com/intelligrape/gradle/Application.class"[37;127H[K[37;2He Practice/bootcamp/build/classes/java/main/com/intelligrape/gradle/Application.class" [noeol][converted] 7L, 594C[1;1HÊþ[1;3Hº[1;4H¾[1;5H[38;5;81m^@^@^@[m4[38;5;81m^@[m"[1;15H[K[2;1H[38;5;81m^@^F^@^T[m        [38;5;81m^@^U^@^V^H^@^W[m[2;31H[K[3;1H[38;5;81m^@^X^@^Y^G^@^Z^G^@^[^A^@^F[m<init>[38;5;81m^A^@^C[m()V[38;5;81m^A^@^D[mCode[38;5;81m^A^@^O[mLineNumberTable[38;5;81m^A^@^R[mLocalVariableTable[38;5;81m^A^@^D[mthis[38;5;81m^A^@[m%Lcom/intelligrape/gradle/Applicatt[4;1Hion;[38;5;81m^A^@^D[mmain[38;5;81m^A^@^V[m([Ljava/lang/String;)V[38;5;81m^A^@^D[margs[38;5;81m^A^@^S[m[Ljava/lang/String;[38;5;81m^A^@[m
+SourceFile[38;5;81m^A^@^P[mApplication.java[38;5;81m^L^@^G^@^H^G^@^\^L^@^]^@^^^A^@^L[mHello Gradle[38;5;81m^G^@^_^L^@[m [38;5;81m^@[m![38;5;81m^A^@[m#com/intelligrape/gradle/Application[38;5;81m^A^@^P[mjava/lann[6;1Hg/Object[38;5;81m^A^@^P[mjava/lang/System[38;5;81m^A^@^C[mout[38;5;81m^A^@^U[mLjava/io/PrintStream;[38;5;81m^A^@^S[mjava/io/PrintStream[38;5;81m^A^@^G[mprintln[38;5;81m^A^@^U[m(Ljava/lang/String;)V[38;5;81m^@[m![38;5;81m^@^E^@^F^@@[7;1H^@^@^@^@^B^@^A^@^G^@^H^@^A^@[m    [38;5;81m^@^@^@[m/[38;5;81m^@^A^@^A^@^@^@^E[m*·[7;58H[38;5;81m^@^A[m±[7;63H[38;5;81m^@^@^@^B^@[m[7;73H[K[8;1H[38;5;81m^@^@^@^F^@^A^@^@^@^C^@^K^@^@^@^L^@^A^@^@^@^E^@^L^@^M^@^@^@[m      [38;5;81m^@^N^@^O^@^A^@[m  [38;5;81m^@^@^@[m7[38;5;81m^@^B^@^A^@^@^@[m   ²[8;106H[38;5;81m^@^B^R^C[m¶[8;115H[38;5;81m^@^D[m±[8;120H[38;5;81m^@^@^@^B^@
+^@^@^@
+^@^B^@^@^@^E^@^H^@^F^@^K^@^@^@^L^@^A^@^@^@[m      [38;5;81m^@^P^@^Q^@^@^@^A^@^R^@^@^@^B^@^S[m[10;81H[K[37;127H1,1[11CAll[1;1H[?25h[?25l[37;117H~@k[1;1H[37;117H   [1;1H[?25h[?25l[37;117H^[[1;1H[37;117H  [1;1H[37;117H^[[1;1H[37;117H  [1;1H[?25h[?25l[37;117Hq[1;1H[?25h[?25l[37;118Hq[1;1H[37;1H[1mrecording @q[m[37;13H[K[37;127H1,1[11CAll[1;1H[?25h[?25l[37;117Hq[1;1H[37;1H[K[1;1H[37;127H1,1[11CAll[1;1H[?25h[?25l[37;117Hq[1;1H[?25h[?25l[37;118H^[[1;1H[37;118H  [1;1H[37;118H^[[1;1H[37;117H   [1;1H[?25h[?25l[37;117H:[1;1H[37;117H[K[37;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l<ories/TTN-Assignments/Gradle Practice/bootcamp/build/classes/java/main/com/intelligrape/gradle/Application.class"< Practice/bootcamp/build/classes/java/main/com/intelligrape/gradle/Application.class" [converted] 7L, 595C written[?2004h[?2004l
+[?2004l[?1l>[?25h[?1049l[23;0;0t[[34m13:25:13[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle wrapper --gradle-verion ~[K33.[K[K.5
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[0K
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Problem configuring task :wrapper from command line.
+[33m> [39mUnknown command-line option '--gradle-verion'.
+
+* Try:
+Run [1mgradle help --task :wrapper[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[31;1mBUILD FAILED[0;39m in 0s
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> root project[m[14D[1B[2A[2K[1B[2K[1A[0m[[34m13:36:50[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle wrapper --gradle-verion 3.5vim build[Kgradle wrapper --gradle-verion 3.5[C[C[1@s
+[0m
+[1A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1A[0K
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0m[[34m13:36:59[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ./gradle
+gradle/  gradlew  
+[[34m13:36:59[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ ./gradlew -v
+Downloading https://services.gradle.org/distributions/gradle-3.5-bin.zip
+.....................................................................
+[0m
+------------------------------------------------------------
+Gradle 3.5
+------------------------------------------------------------
+
+Build time:   2017-04-10 13:37:25 UTC
+Revision:     b762622a185d59ce0cfc9cbc6ab5dd22469e18a6
+
+Groovy:       2.4.10
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_202 (Amazon.com Inc. 25.202-b08)
+OS:           Linux 4.15.0-45-generic amd64
+
+[2K[0m[[34m13:37:16[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ gradle -v
+[0m
+------------------------------------------------------------
+Gradle 4.10.2
+------------------------------------------------------------
+
+Build time:   2018-09-19 18:10:15 UTC
+Revision:     b4d8d5d170bb4ba516e88d7fe5647e2323d791dd
+
+Kotlin DSL:   1.0-rc-6
+Kotlin:       1.2.61
+Groovy:       2.4.15
+Ant:          Apache Ant(TM) version 1.9.11 compiled on March 23 2018
+JVM:          1.8.0_202 (Amazon.com Inc. 25.202-b08)
+OS:           Linux 4.15.0-45-generic amd64
+
+[0m[[34m13:37:23[m] gaurav@gaurav[00m:[01;34mbootcamp[01;31m (gradle)[00m$ exit
+
+Script done on 2019-03-05 13:48:56+0530
