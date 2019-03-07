@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1c0772-3fb4-4632-ae49-728e0ef41aba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/BridgeDesignPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/TestClone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/TestEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gradle Practice/Gradle_Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle Practice/Gradle_Assignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TTN-Assignments/DesignPatterns/Assignment/ProxyAccessStudentReords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTN-Assignments/DesignPatterns/Assignment/ProxyAccessStudentReords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spock-demo/1.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DesignPatterns/Practice/FactoryDesignPattern/TestClone.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
     <option name="y" value="27" />
     <option name="width" value="1317" />
@@ -114,43 +110,18 @@
               <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTN-Assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="FactoryDesignPattern" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551961759289" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551963286897" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spock-demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -287,17 +258,17 @@
       <workItem from="1551863929310" duration="3119000" />
       <workItem from="1551878081092" duration="129000" />
       <workItem from="1551935272677" duration="7055000" />
+      <workItem from="1551968956859" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113849000" />
+    <option name="totallyTimeSpent" value="114112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32336742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32887492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -307,7 +278,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27933884" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27933884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
