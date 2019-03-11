@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="constructor-config" class="Assignment.Database">
+        <constructor-arg value="22"/>
+        <constructor-arg value="ssh"/>
+    </bean>
+
+    <bean id="setter-config" class="Assignment.Database">
+        <property name="name" value="ftp"/>
+        <property name="port" value="22"/>
+    </bean>
+
+    <!--<bean id="tea" class="Assignment.Tea" autowire="byType" ></bean>-->
+    <bean id="hotDrink" class="Assignment.Tea" autowire="byName" scope="prototype"></bean>
+    <!--<bean id="expressTea" class="Assignment.ExpressTea"></bean>-->
+
+    <bean id="teaRestaurant" class="Assignment.Restaurant" >
+        <property name="hotDrink" ref="hotDrink"></property>
+    </bean>
+    <!--<bean id="expressTeaRestaurant" class="Assignment.Restaurant">-->
+        <!--<property name="hotDrink" ref="expressTea"></property>-->
+    <!--</bean>-->
+
+    <bean id="complex" class="Assignment.Complex">
+        <constructor-arg >
+            <list>
+                <value>list 1</value>
+                <value>list 2</value>
+                <value>list 3</value>
+                <value>list 4</value>
+                <value>list 5</value>
+                <value>list 6</value>
+                <value>list 7</value>
+                <value>list 8</value>
+                <value>list 9</value>
+                <value>list 0</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg >
+            <set>
+                <value>set 1</value>
+                <value>set 2</value>
+                <value>set 3</value>
+                <value>set 4</value>
+                <value>set 5</value>
+                <value>set 6</value>
+                <value>set 7</value>
+                <value>set 8</value>
+                <value>set 9</value>
+                <value>set 0</value>
+            </set>
+        </constructor-arg>
+        <constructor-arg >
+            <map>
+                <entry key="key 1" value="value 1"/>
+                <entry key="key 2" value="value 2"/>
+                <entry key="key 3" value="value 3"/>
+                <entry key="key 4" value="value 4"/>
+                <entry key="key 5" value="value 5"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="autowireByType" class="Assignment.Restaurant" autowire="byType">
+    </bean>
+
+    <bean id="autowireByName" class="Assignment.Restaurant" autowire="byName">
+    </bean>
+
+    <bean id="autowireByConstructor" class="Assignment.Restaurant" autowire="constructor"></bean>
+</beans>
