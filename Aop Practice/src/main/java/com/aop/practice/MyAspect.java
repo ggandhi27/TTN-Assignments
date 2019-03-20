@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.Before;
 public class MyAspect {
 
     
-    @Before("execution(public void display())")
+    @Before("execution(void display())")
     void beforeAdvice(){
         System.out.println("Before advice is invoked.");
     }

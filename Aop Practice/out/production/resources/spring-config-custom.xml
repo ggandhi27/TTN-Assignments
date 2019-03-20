@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.custom.event.handling.CustomEventListener" id="customEventListener"></bean>
-    <bean class="com.custom.event.handling.CustomEventPublisher" id="customEventPublisher"></bean>
+    <bean class="com.event.handling.custom.CustomEventListener" id="customEventListener"></bean>
+    <bean class="com.event.handling.custom.CustomEventPublisher" id="customEventPublisher"></bean>
 
 
 </beans>
