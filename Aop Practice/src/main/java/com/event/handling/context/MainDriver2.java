@@ -1,4 +1,4 @@
-package com.context.event.handling;
+package com.event.handling.context;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;

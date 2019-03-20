@@ -1,4 +1,4 @@
-package com.custom.event.handling;
+package com.event.handling.custom;
 
 public class DummyClass{
     void run(){

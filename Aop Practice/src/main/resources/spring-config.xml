@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="dummy" class="com.context.event.handling.Dummy"></bean>
-    <bean id="startEventBean" class="com.context.event.handling.StartEventHandler"></bean>
-    <bean id="stopEventBean" class="com.context.event.handling.StopEventHandler"></bean>
-    <bean id="refreshEventBean" class="com.context.event.handling.RefreshEventHandler"></bean>
-    <bean id="closeEventBean" class="com.context.event.handling.ClosedEventHandler"></bean>
+    <bean id="dummy" class="com.event.handling.context.Dummy"></bean>
+    <bean id="startEventBean" class="com.event.handling.context.StartEventHandler"></bean>
+    <bean id="stopEventBean" class="com.event.handling.context.StopEventHandler"></bean>
+    <bean id="refreshEventBean" class="com.event.handling.context.RefreshEventHandler"></bean>
+    <bean id="closeEventBean" class="com.event.handling.context.ClosedEventHandler"></bean>
 
 </beans>
