@@ -1,4 +1,10 @@
 package com.custom.event.handling;
 
-public class CustomEventListener {
+import org.springframework.context.ApplicationListener;
+
+public class CustomEventListener implements ApplicationListener<CustomEvent> {
+    @Override
+    public void onApplicationEvent(CustomEvent event) {
+        System.out.println("Custom Event invoked");
+    }
 }
