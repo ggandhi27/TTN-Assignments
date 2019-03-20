@@ -8,8 +8,8 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
     <!--<aop:aspectj-autoproxy/>-->
 
-    <bean id="dummy" class="com.aop.practice.Dummy" name="dummy"></bean>
-    <bean id="myaspect" class="com.aop.practice.MyAspect"></bean>
+    <bean id="dummy" class="com.practice.aop.Dummy" name="dummy"></bean>
+    <bean id="myaspect" class="com.practice.aop.MyAspect"></bean>
     <!--<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>-->
 
 </beans>
