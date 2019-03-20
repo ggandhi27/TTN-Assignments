@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1b2052-d3a9-4457-8ecb-c4ca5a93b809" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aop/practice/Dummy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aop/practice/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aop-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/custom/event/handling/CustomEventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/custom/event/handling/CustomEventListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/custom/event/handling/CustomMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/custom/event/handling/CustomMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/ClosedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/ClosedEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/Dummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/Dummy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/GeneralEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/GeneralEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/MainDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/MainDriver2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/MainDriver2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/RefreshEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/RefreshEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/StartEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/StartEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/event/handling/StopEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/context/StopEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/custom/event/handling/CustomEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/custom/event/handling/CustomEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/custom/event/handling/CustomEventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/custom/event/handling/CustomMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/custom/event/handling/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/event/handling/custom/DummyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-config-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-config-2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-config-custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-config-custom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,22 +27,55 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventPublisher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/practice/Dummy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+            <state relative-caret-position="330">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#73#74#0" expanded="true" />
+                <element signature="e#109#110#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventListener.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/aop-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/practice/MyAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/Dummy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/StartEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/StopEventHandler.java" />
@@ -95,6 +115,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/custom/event/handling/CustomEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/event/custom/handling/CustomEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventListener.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/aop-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aop/practice/Dummy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aop/practice/MyAspect.java" />
       </list>
     </option>
   </component>
@@ -141,7 +165,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aop Practice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aop" type="b2602c69:ProjectViewProjectNode" />
@@ -161,7 +194,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553071566303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553112256896" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -235,15 +268,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552990679089</updated>
-      <workItem from="1552990686350" duration="10411000" />
+      <workItem from="1552990686350" duration="14052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10411000" />
+    <option name="totallyTimeSpent" value="14052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -284,13 +318,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.5.RELEASE/9f42597b821f59087bf759695992c5ea8a1fcf0d/spring-context-5.1.5.RELEASE-sources.jar!/org/springframework/context/event/ContextRefreshedEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -446,16 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -466,10 +483,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/event/handling/custom/CustomEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aop-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/practice/Dummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#73#74#0" expanded="true" />
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/practice/MyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
