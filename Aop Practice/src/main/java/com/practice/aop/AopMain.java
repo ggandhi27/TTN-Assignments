@@ -1,6 +1,5 @@
-package com.aop.practice;
+package com.practice.aop;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

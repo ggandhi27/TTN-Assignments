@@ -1,4 +1,4 @@
-package com.aop.practice;
+package com.practice.aop;
 
 public class Dummy {
     public void display(){
