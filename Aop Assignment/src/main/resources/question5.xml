@@ -12,6 +12,6 @@
 
 <aop:aspectj-autoproxy/>
 
-    <bean class="Question5.Services"></bean>
-    <bean class="Question5.Question5Aspect"></bean>
+    <bean class="question5.Services"></bean>
+    <bean class="question5.Question5Aspect"></bean>
 </beans>

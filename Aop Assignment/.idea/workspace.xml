@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49189977-6471-4615-b67f-3959104dea44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Question5/Question5Aspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Question5/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question6/Question6Aspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question6/Question6Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question6/Sample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/question6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Question5/Question5Aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question5/Question5Aspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Question5/Question5Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question5/Question5Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Question5/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question5/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/question5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/question5.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -23,45 +29,56 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Services.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/question6/Sample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
-                <element signature="e#62#63#0" expanded="true" />
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#62#63#0" expanded="true" />
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#62#63#0" expanded="true" />
-                <element signature="e#98#99#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Question5Aspect.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/question6/Question6Aspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+            <state relative-caret-position="180">
+              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Question5Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/question6/Question6Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/question6.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/question5.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="35" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -71,9 +88,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Aspect" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -106,6 +123,12 @@
         <option value="$PROJECT_DIR$/src/main/java/question4/Question4Aspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/Question5/Services.java" />
         <option value="$PROJECT_DIR$/src/main/java/Question5/Question5Aspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/question5.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Question5/Question5Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question6/Sample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question6/Question6Aspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/question6.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/question6/Question6Main.java" />
       </list>
     </option>
   </component>
@@ -154,15 +177,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="question4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aop Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aop Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Question5" type="462c0819:PsiDirectoryNode" />
+              <item name="question6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Aop Assignment" type="b2602c69:ProjectViewProjectNode" />
@@ -180,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553162322775" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553162921568" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -196,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question5Main">
+  <component name="RunManager" selected="Application.Question6Main">
     <configuration name="CustomMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question3.CustomMain" />
       <module name="com.aop.assignment.Aop_Assignment.main" />
@@ -217,19 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Question2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question2.Question2Main" />
-      <module name="com.aop.assignment.Aop_Assignment.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="question2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Question4Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question4.Question4Main" />
       <module name="com.aop.assignment.Aop_Assignment.main" />
@@ -244,11 +246,24 @@
       </method>
     </configuration>
     <configuration name="Question5Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question5.Question5Main" />
+      <option name="MAIN_CLASS_NAME" value="question5.Question5Main" />
       <module name="com.aop.assignment.Aop_Assignment.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Question5.*" />
+          <option name="PATTERN" value="question5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question6Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question6.Question6Main" />
+      <module name="com.aop.assignment.Aop_Assignment.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question6Main" />
         <item itemvalue="Application.Question5Main" />
         <item itemvalue="Application.Question4Main" />
         <item itemvalue="Application.CustomMain" />
         <item itemvalue="Application.Question1" />
-        <item itemvalue="Application.Question2Main" />
       </list>
     </recent_temporary>
   </component>
@@ -276,15 +291,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553154899994</updated>
-      <workItem from="1553154904389" duration="5756000" />
+      <workItem from="1553154904389" duration="6369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5756000" />
+    <option name="totallyTimeSpent" value="6369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -304,7 +320,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29586777" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24958678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,14 +518,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/question4.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/question4/Question4Aspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="240">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Services.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/question5/Question5Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/question4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question5/Question5Aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question5/Services.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
@@ -526,34 +576,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question4/Question4Aspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/question6/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question6/Question6Aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/question5.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/question6.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question6/Question6Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Question5Aspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Question5/Question5Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>

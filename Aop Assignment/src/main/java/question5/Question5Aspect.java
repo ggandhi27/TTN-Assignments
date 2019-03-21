@@ -1,4 +1,4 @@
-package Question5;
+package question5;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -19,6 +19,6 @@ public class Question5Aspect {
         System.out.println(joinPoint.getSignature() + " is completed");
     }
     
-    @Pointcut("execution(* Question5.Services.*())")
+    @Pointcut("execution(* question5.Services.*())")
     void pointCut(){}
 }

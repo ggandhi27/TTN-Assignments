@@ -1,4 +1,4 @@
-package Question5;
+package question5;
 
 public class Services {
     void method2(){
