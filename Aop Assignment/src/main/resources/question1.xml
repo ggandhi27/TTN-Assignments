@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dummy" class="question2.Dummy"></bean>
+    <bean class="question2.CloseEventListener"></bean>
+    <bean class="question2.StartEventListener"></bean>
+    <bean class="question2.StopEventListener"></bean>
+    <bean class="question2.RefreshEventListener "></bean>
+</beans>
