@@ -29,5 +29,7 @@ public class JDBCTemplateMain {
         jdbcTemplateUserDao.getUserList();
         
         jdbcTemplateUserDao.getUser();
+        
+        jdbcTemplateUserDao.getNamedParameteTemplateDao();
     }
 }

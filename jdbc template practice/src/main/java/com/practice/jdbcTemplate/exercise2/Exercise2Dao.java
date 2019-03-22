@@ -1,18 +1,15 @@
-package com.practice.jdbcTemplate;
+package com.practice.jdbcTemplate.exercise2;
 
 import com.practice.jdbcTemplate.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 
 class UserMapper implements RowMapper<User> {
     
@@ -25,12 +22,13 @@ class UserMapper implements RowMapper<User> {
         user.setName(rs.getString(3));
         user.setAge(rs.getInt(4));
         user.setDob(rs.getString(5));
+        
         return user;
     }
 }
 
 @Repository
-public class JDBCTemplateUserDao {
+public class Exercise2Dao {
     
     @Autowired
     DataSource dataSource;
@@ -41,50 +39,41 @@ public class JDBCTemplateUserDao {
     @Autowired
     NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     
-    void userCount(){
+    void getUserCount(){
         String sql = "SELECT COUNT(*) FROM user";
         System.out.println(jdbcTemplate.queryForObject(sql,Integer.class));
     }
     
-    void getUserName(){
-        String sql = "SELECT name FROM user WHERE username=?";
+    void getName(){
+        String sql = "SELECT name FROM user WHERE username = ?";
     
         System.out.println(jdbcTemplate.queryForObject(sql,new Object[]{"ggandhi"},String.class));
     }
     
-    void insertUser(User user){
+    void insertUser(User user) {
+        String sql = "INSERT INTO user (username,password,name,age,dob) values (?,?,?,?,?)";
         
-        String sql = "INSERT INTO user (username,password,name,age,dob) VALUES (?,?,?,?,?)";
-        
-        jdbcTemplate.update(sql,new Object[]{user.getUsername(),user.getPassword(),user.getName(),user.getAge(),user.getDob()});
+        jdbcTemplate.update(sql,new Object[]{user.getUsername(),user.getPassword(),
+        user.getName(),user.getAge(),user.getDob()});
     }
     
-    void getUserRow(){
+    void fetchUserDetails() {
         
         String sql = "SELECT * FROM user WHERE username = ?";
     
         System.out.println(jdbcTemplate.queryForMap(sql,new Object[]{"ggandhi"}));
-        
     }
     
-    void getUserList(){
-        String sql = "SELECT * FROM user";
+    void getAllUsers() {
         
+        String sql = "SELECT * FROM user";
+    
         System.out.println(jdbcTemplate.queryForList(sql));
     }
     
-    void getUser(){
+    void getUserMapper(){
         String sql = "SELECT * FROM user WHERE username = ?";
     
         System.out.println(jdbcTemplate.queryForObject(sql,new Object[]{"ggandhi"},new UserMapper()));
-        
-    }
-    
-    void getNamedParameteTemplateDao(){
-        String sql = "SELECT * FROM user where username = :id";
-    
-        SqlParameterSource sqlParameterSource = new MapSqlParameterSource("id","ggandhi");
-    
-        System.out.println(namedParameterJdbcTemplate.queryForObject(sql,sqlParameterSource,new UserMapper()));
     }
 }
