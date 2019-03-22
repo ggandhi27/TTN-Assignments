@@ -10,22 +10,34 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-//@Service
+@Service
 public class UserDaoService {
     
     @Autowired
-    @Qualifier("datasource")    //@Qualifier is used to give the name of the bean with the different name as that of the variable name      
+    @Qualifier("datasource")    //@Qualifier is used to give the name of the bean with the different name as that of the variable name
     DataSource dataSource;
     
-    void printUserNames() throws SQLException {
-        Connection connection = dataSource.getConnection();
+    @Autowired
+    DataSource singleConnectionDataSource;
     
+    void print(Connection connection) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("select * from user");
     
         ResultSet resultSet = preparedStatement.executeQuery();
-        
+    
         while (resultSet.next()){
             System.out.println(resultSet.getString("username"));
         }
+        
+    }
+    
+    void printUserNames() throws SQLException {
+        Connection connection = dataSource.getConnection();
+        this.print(connection);
+    }
+    
+    void printSingleConnectionUserName() throws SQLException {
+        Connection connection = singleConnectionDataSource.getConnection();
+        this.print(connection);
     }
 }

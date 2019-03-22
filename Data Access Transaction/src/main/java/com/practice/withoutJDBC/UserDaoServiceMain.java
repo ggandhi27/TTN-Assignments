@@ -14,5 +14,7 @@ public class UserDaoServiceMain {
         UserDaoService userDaoService = (UserDaoService) applicationContext.getBean("userdao");
         
         userDaoService.printUserNames();
+        
+        userDaoService.printSingleConnectionUserName();
     }
 }
