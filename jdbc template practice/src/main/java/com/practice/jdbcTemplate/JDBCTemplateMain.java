@@ -1,6 +1,7 @@
 package com.practice.jdbcTemplate;
 
 import com.practice.jdbcTemplate.entity.User;
+import com.practice.orm.ORMDao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -31,5 +32,9 @@ public class JDBCTemplateMain {
         jdbcTemplateUserDao.getUser();
         
         jdbcTemplateUserDao.getNamedParameteTemplateDao();
+    
+        ORMDao ormDao = applicationContext.getBean(ORMDao.class);
+        
+        ormDao.sessionFactoryDemo();
     }
 }

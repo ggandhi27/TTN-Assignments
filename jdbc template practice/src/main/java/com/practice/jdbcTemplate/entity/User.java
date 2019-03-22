@@ -1,5 +1,11 @@
 package com.practice.jdbcTemplate.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
 public class User {
     @Override
     public String   toString() {
@@ -11,8 +17,9 @@ public class User {
                 ", age=" + age +
                 '}';
     }
-    
+    @Id
     private String username;
+    
     private String name;
     private String password;
     private String dob;
