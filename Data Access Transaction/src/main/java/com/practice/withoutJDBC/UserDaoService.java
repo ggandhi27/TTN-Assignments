@@ -1,5 +1,6 @@
 package com.practice.withoutJDBC;
 
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,9 @@ public class UserDaoService {
     @Autowired
     DataSource singleConnectionDataSource;
     
+    @Autowired
+    BasicDataSource basicDataSource;
+    
     void print(Connection connection) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("select * from user");
     
@@ -38,6 +42,11 @@ public class UserDaoService {
     
     void printSingleConnectionUserName() throws SQLException {
         Connection connection = singleConnectionDataSource.getConnection();
+        this.print(connection);
+    }
+    
+    void printPooledConnectionUserName() throws SQLException {
+        Connection connection = basicDataSource.getConnection();
         this.print(connection);
     }
 }

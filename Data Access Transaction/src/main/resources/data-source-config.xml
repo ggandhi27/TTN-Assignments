@@ -22,6 +22,14 @@
     </bean>
 
 
+    <bean id="basicDataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/springDemo"/>
+        <property name="username" value="gaurav"/>
+        <property name="password" value="123456"/>
+        <property name="initialSize" value="2"/>
+        <property name="maxTotal" value="5"/>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
     <context:annotation-config></context:annotation-config>
     <!--We have to mention the context for the annotations to use the annotations
     such as @Service, @Autowired, @Controller, @Qualifier, etc.-->

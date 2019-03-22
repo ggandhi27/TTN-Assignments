@@ -16,5 +16,7 @@ public class UserDaoServiceMain {
         userDaoService.printUserNames();
         
         userDaoService.printSingleConnectionUserName();
+        
+        userDaoService.printPooledConnectionUserName();
     }
 }
