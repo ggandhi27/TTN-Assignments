@@ -20,4 +20,9 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-core', version: '5.1.5.RELEASE'
     // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
     compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.0'
+    // https://mvnrepository.com/artifact/org.springframework/spring-orm
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.0.3.RELEASE'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.1.Final'
+
 }
