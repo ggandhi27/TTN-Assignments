@@ -3,12 +3,13 @@ package question3;
 import Mapper.UserMapper;
 import entity.User;
 import org.apache.commons.dbcp2.BasicDataSource;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -29,6 +30,15 @@ public class Question3DaoService {
     
     @Autowired
     JdbcTemplate jdbcTemplate;
+    
+    @Autowired
+    SessionFactory sessionFactoryBean;
+    
+    void sessionFactoryDemo() {
+        String sql = "SELECT COUNT(*) FROM User ";
+        Query query = sessionFactoryBean.openSession().createQuery(sql);
+        System.out.println(query.uniqueResult());
+    }
     
     Connection getConnection() throws SQLException {
         return  dataSource.getConnection();
@@ -72,4 +82,6 @@ public class Question3DaoService {
         return jdbcTemplate.queryForObject(fetchDetailsQuery,new Object[]{username}, new UserMapper()
         );
     }
+    
+    
 }
