@@ -36,8 +36,12 @@ public class DataSourceMain {
     
     
         User user1 = new User("ggandhi1","123456","gaurav",23,new Date(96,7,27));
-        question3DaoService.insertUser(user1);
+//        question3DaoService.insertUser(user1);
         
         UserCrudOperations.listUsers(connection);
+    
+        System.out.println(question3DaoService.queryUserDetails(username));
+        
+        
     }
 }
