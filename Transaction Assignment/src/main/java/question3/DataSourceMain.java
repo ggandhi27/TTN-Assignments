@@ -41,7 +41,7 @@ public class DataSourceMain {
         UserCrudOperations.listUsers(connection);
     
         System.out.println(question3DaoService.queryUserDetails(username));
-        
-        
+    
+        System.out.println(question3DaoService.fetchAllRecords());
     }
 }

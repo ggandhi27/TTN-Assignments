@@ -11,6 +11,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -59,5 +60,10 @@ public class Question3DaoService {
     public Map queryUserDetails(String username) {
         String mapQuery = "SELECT * FROM user WHERE username=?";
         return jdbcTemplate.queryForMap(mapQuery,new Object[]{username});
+    }
+    
+    public List fetchAllRecords() {
+        String fetchAllSql = "SELECT * FROM user";
+        return jdbcTemplate.queryForList(fetchAllSql);
     }
 }
