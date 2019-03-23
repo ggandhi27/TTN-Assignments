@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import question2.UserCrudOperations;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.SQLException;
 
 public class DataSourceMain {
@@ -32,5 +33,11 @@ public class DataSourceMain {
         String username = "cgandhi";
         System.out.println("Name associated with the username : " +username+" " +
                 "is "+question3DaoService.getName(username));
+    
+    
+        User user1 = new User("ggandhi1","123456","gaurav",23,new Date(96,7,27));
+        question3DaoService.insertUser(user1);
+        
+        UserCrudOperations.listUsers(connection);
     }
 }

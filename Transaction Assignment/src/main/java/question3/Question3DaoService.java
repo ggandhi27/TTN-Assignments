@@ -1,5 +1,6 @@
 package question3;
 
+import entity.User;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -46,5 +47,11 @@ public class Question3DaoService {
     public String getName(String username) {
         String getNameSql = "SELECT name FROM user WHERE username=?";
         return jdbcTemplate.queryForObject(getNameSql,new Object[]{username},String.class);
+    }
+    
+    public void insertUser(User user) {
+        String insertSql = "INSERT INTO user (username,password,name,age,dob)values(?,?,?,?,?)";
+        jdbcTemplate.update(insertSql,new Object[]{user.getUsername(),user.getPassword(),user.getName(),
+        user.getAge(),user.getDob()});
     }
 }
