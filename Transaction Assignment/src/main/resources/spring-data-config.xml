@@ -41,5 +41,10 @@
                 <prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
             </props>
         </property>
+
+        <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
     </bean>
 </beans>
