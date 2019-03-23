@@ -24,6 +24,10 @@ public class User {
         this.dob = dob;
     }
     
+    public User() {
+    
+    }
+    
     public String getUsername() {
         return username;
     }

@@ -43,5 +43,7 @@ public class DataSourceMain {
         System.out.println(question3DaoService.queryUserDetails(username));
     
         System.out.println(question3DaoService.fetchAllRecords());
+    
+        System.out.println(question3DaoService.fetchUserDetails(username));
     }
 }

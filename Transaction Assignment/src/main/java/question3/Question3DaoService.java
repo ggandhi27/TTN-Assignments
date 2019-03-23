@@ -1,5 +1,6 @@
 package question3;
 
+import Mapper.UserMapper;
 import entity.User;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,5 +66,10 @@ public class Question3DaoService {
     public List fetchAllRecords() {
         String fetchAllSql = "SELECT * FROM user";
         return jdbcTemplate.queryForList(fetchAllSql);
+    }
+    public User fetchUserDetails(String username) {
+        String fetchDetailsQuery = "SELECT * FROM user WHERE username=?";
+        return jdbcTemplate.queryForObject(fetchDetailsQuery,new Object[]{username}, new UserMapper()
+        );
     }
 }
