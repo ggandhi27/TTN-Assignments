@@ -13,7 +13,7 @@ public class DataSourceMain {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-data-config.xml");
         
         Question3DaoService question3DaoService = context.getBean(Question3DaoService.class);
-    
+        
         System.out.println("Using DriverManagerDataSource class\n******************************************************");
         Connection connection = question3DaoService.getConnection();
         UserCrudOperations.listUsers(connection);
@@ -28,5 +28,9 @@ public class DataSourceMain {
     
         System.out.print("Number of users in the user table are :: ");
         question3DaoService.printUserCount();
+        
+        String username = "cgandhi";
+        System.out.println("Name associated with the username : " +username+" " +
+                "is "+question3DaoService.getName(username));
     }
 }

@@ -42,4 +42,9 @@ public class Question3DaoService {
         String countSql = "SELECT COUNT(*) FROM user";
         System.out.println(jdbcTemplate.queryForObject(countSql, Integer.class));
     }
+    
+    public String getName(String username) {
+        String getNameSql = "SELECT name FROM user WHERE username=?";
+        return jdbcTemplate.queryForObject(getNameSql,new Object[]{username},String.class);
+    }
 }
