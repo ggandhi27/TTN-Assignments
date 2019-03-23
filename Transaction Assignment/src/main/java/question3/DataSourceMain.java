@@ -25,5 +25,8 @@ public class DataSourceMain {
         System.out.println("Using SingleConnectionDataSource class\n******************************************************");
         Connection singleConnectionDataSourceConnection = question3DaoService.getSingleConnectionDataSource();
         UserCrudOperations.listUsers(singleConnectionDataSourceConnection);
+    
+        System.out.print("Number of users in the user table are :: ");
+        question3DaoService.printUserCount();
     }
 }

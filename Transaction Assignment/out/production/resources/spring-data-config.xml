@@ -28,4 +28,8 @@
         <property name="password" value="123456"/>
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
+
+    <bean class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="singleConnectionDataSource"></property>
+    </bean>
 </beans>
