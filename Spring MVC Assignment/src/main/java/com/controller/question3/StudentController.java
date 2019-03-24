@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Map;
 
 @Controller
 public class StudentController {
@@ -43,4 +44,12 @@ public class StudentController {
 //        httpServletResponse.setContentType("text/html");
 //        httpServletResponse.getWriter().println("First Name :: " + firstname + "<br>Last Name :: " + lastname);
 //    }
+
+//    Question 7
+    @RequestMapping("/details/{firstname}/{lastname}/{age}")
+    @ResponseBody
+    public String getDetailsMap(@PathVariable Map<String,String> map) {
+        return "First Name :: " + map.get("firstname") + "  <br>Last Name :: " + map.get("lastname") + "" +
+                "<br>Age :: " + map.get("age");
+    }
 }
