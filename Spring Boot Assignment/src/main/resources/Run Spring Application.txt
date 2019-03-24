@@ -1,0 +1,28 @@
+
+
+Different ways of running a Spring Boot App
+***********
+*  First  *
+***********
+    Run the Main java class marked with @SpringBootApplication Annotation and contains main method as follows:
+
+        public static void main(String[] args) {
+
+	     SpringApplication.run(BasicsApplication.class, args);
+	}
+***********************
+
+************
+*  Second  *
+************
+
+    Execute the bootRun Gradle tasks
+
+***********
+*  Third  *
+***********
+    Create an Executable jar with the help of bootJar Gradle task. This task will build an executable jar inside build/libs folder. Now execute the jar files using command below:
+
+java -jar basics-0.0.1-SNAPSHOT.jar
+java -jar basics-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+java -jar basics-0.0.1-SNAPSHOT.jar --server.port=8080
