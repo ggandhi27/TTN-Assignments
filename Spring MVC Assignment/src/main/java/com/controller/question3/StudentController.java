@@ -1,9 +1,7 @@
 package com.controller.question3;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,5 +49,18 @@ public class StudentController {
     public String getDetailsMap(@PathVariable Map<String,String> map) {
         return "First Name :: " + map.get("firstname") + "  <br>Last Name :: " + map.get("lastname") + "" +
                 "<br>Age :: " + map.get("age");
+    }
+    
+//    Question 8
+    @RequestMapping("/form")
+    public ModelAndView getForm() {
+        return new ModelAndView("form");
+    }
+    
+    @RequestMapping(value = "/submitform",method = RequestMethod.POST)
+    @ResponseBody
+    public String submitForm(@RequestParam("firstname") String firstname,
+                             @RequestParam("lastname") String lastname) {
+        return "First Name :: " + firstname + "<br>Last Name :: " + lastname;
     }
 }
