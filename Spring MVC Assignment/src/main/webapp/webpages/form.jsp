@@ -11,6 +11,7 @@
     <title>Form</title>
 </head>
 <body>
+    ${heading}
     <form action="/submitform" method="post">
         <input type="text" placeholder="firstname" name="firstname">
         <input type="text" placeholder="lastname" name="lastname">

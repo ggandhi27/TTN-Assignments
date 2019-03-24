@@ -11,6 +11,7 @@
     <title>Hello World</title>
 </head>
 <body>
+    ${heading}
     <h1>Hellow world jsp is this.</h1>
 </body>
 </html>

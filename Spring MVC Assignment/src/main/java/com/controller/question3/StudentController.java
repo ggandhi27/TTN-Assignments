@@ -1,6 +1,8 @@
 package com.controller.question3;
 
+import com.entity.StudentCo;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -62,5 +64,18 @@ public class StudentController {
     public String submitForm(@RequestParam("firstname") String firstname,
                              @RequestParam("lastname") String lastname) {
         return "First Name :: " + firstname + "<br>Last Name :: " + lastname;
+    }
+    
+//    Question 9
+    @RequestMapping(value = "newStudent", method = RequestMethod.POST)
+    @ResponseBody
+    public String submitStudent(StudentCo student) {
+        return student.toString();
+    }
+    
+    //Exercise 10
+    @ModelAttribute
+    public void addHeading(Model model) {
+        model.addAttribute("heading", "Spring MVC Demo");
     }
 }

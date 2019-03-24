@@ -11,6 +11,7 @@
     <title>Index</title>
 </head>
 <body>
+    ${heading}
     <h1>Hello from index.jsp</h1>
 </body>
 </html>
