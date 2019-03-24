@@ -18,4 +18,9 @@ public class StudentController {
     public List<Student> getStudentList() {
         return studentService.getStudentList();
     }
+    
+    @GetMapping("/getstudentlist")
+    public List<Student> getStudentDBList() {
+        return studentService.getStudentDBList();
+    }
 }

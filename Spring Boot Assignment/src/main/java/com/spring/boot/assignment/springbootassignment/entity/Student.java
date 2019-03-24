@@ -9,6 +9,33 @@ import javax.persistence.Table;
 public class Student {
     
     @Id
+    private Integer stuid;
+    
+    @Override
+    public String toString() {
+        return "Student{" +
+                "stuid=" + stuid +
+                ", id='" + id + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
+    }
+    
+    public Integer getStuid() {
+        return stuid;
+    }
+    
+    public void setStuid(Integer stuid) {
+        this.stuid = stuid;
+    }
+    
+    public Student(Integer stuid, String id, String firstname, String lastname) {
+        this.stuid = stuid;
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    
     private String id;
     private String firstname;
     private String lastname;
@@ -46,12 +73,4 @@ public class Student {
         this.lastname = lastname;
     }
     
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id='" + id + '\'' +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                '}';
-    }
 }
