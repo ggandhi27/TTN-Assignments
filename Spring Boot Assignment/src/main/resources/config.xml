@@ -8,5 +8,9 @@
         <constructor-arg name="username" value="gaurav"/>
         <constructor-arg name="password" value="123456"/>
     </bean>
-    
+
+    <bean class="com.spring.boot.assignment.springbootassignment.entity.Database">
+        <property name="name" value="springDemo"/>
+        <property name="port" value="3306"/>
+    </bean>
 </beans>
