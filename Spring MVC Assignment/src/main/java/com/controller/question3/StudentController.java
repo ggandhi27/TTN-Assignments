@@ -7,19 +7,23 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class StudentController {
-
-//    Question 3
-    @RequestMapping("/")
+    
+    //    Question 3
+    @RequestMapping ("/")
     public ModelAndView getIndex() {
         ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
     
-//    Question 4
-    @RequestMapping("/hello")
+    //    Question 4
+    @RequestMapping ("/hello")
     @ResponseBody
     public String getHello() {
         return "Hello World";
     }
-    
+
+//    Question 5
+    @RequestMapping("/HelloWorld")
+    @ResponseBody
+    public ModelAndView getHelloWorld() { return new ModelAndView("helloworld");}
 }
