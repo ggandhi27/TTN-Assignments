@@ -105,7 +105,7 @@ public class Executor {
         System.out.println("\n Find by Age and order by id :: \n" + personRepository.findByAgeGreaterThanOrderByIdDesc(25));
         
         //Question 13
-        System.out.println("************************ Question 12 ***********************************");
-        System.out.println(personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id"))););
+        System.out.println("************************ Question 13 ***********************************");
+        System.out.println(personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id"))));
     }
 }
