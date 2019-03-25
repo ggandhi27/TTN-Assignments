@@ -16,13 +16,17 @@ public class DummyMain {
         employee.setName("Peter");
         employee.setSalary(10000);
         employeerepository.save(employee);
-//        Employee employee1 = new Employee("Amanda",23,12252);
-//        employeerepository.save(employee1);
+        Employee employee1 = new Employee("Amanda",23,12252);
+        employeerepository.save(employee1);
     
-//        for(Employee e:employeerepository.findById(1)){
-//            System.out.println(e);
-//        }
+        for(Employee e:employeerepository.findById(1)){
+            System.out.println(e);
+        }
     
         System.out.println(employeerepository.findById(2));
+    
+        System.out.println(employeerepository.findAllByAgeOrderByIdDesc(23));
+    
+        System.out.println(employeerepository.findAllByOrderByAge());
     }
 }

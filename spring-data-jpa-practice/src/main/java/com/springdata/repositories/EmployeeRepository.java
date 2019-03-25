@@ -19,4 +19,7 @@ public interface EmployeeRepository extends CrudRepository<Employee,Integer> {
     @Query("SELECT e from Employee e WHERE id=:id")
     List<Employee> findById(@Param ("id") Integer id);
     
+    List<Employee> findAllByAgeOrderByIdDesc(Integer age);
+    
+    List<Employee> findAllByOrderByAge();
 }
