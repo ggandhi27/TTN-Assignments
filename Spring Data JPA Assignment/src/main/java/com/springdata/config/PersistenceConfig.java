@@ -1,6 +1,7 @@
 package com.springdata.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -14,6 +15,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories("com.springdata.repository")
+@ComponentScan("com")
 public class PersistenceConfig {
     @Bean
     DataSource dataSource(){
@@ -36,6 +38,7 @@ public class PersistenceConfig {
         jpaProperties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQLDialect");
         jpaProperties.setProperty("hibernate.show_sql","true");
         jpaProperties.setProperty("hibernate.hbm2ddl.auto","update");
+//        jpaProperties.setProperty("hibernate.hbm2ddl.auto","create-drop");
         
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
         return entityManagerFactoryBean;

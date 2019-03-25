@@ -1,17 +1,14 @@
 package com.springdata.entity;
-
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "person")
 public class Person {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    
     private Integer age;
     private Integer salary;
     private String firstname;
@@ -20,8 +17,7 @@ public class Person {
     public Person() {
     }
     
-    public Person(Integer id, Integer age, Integer salary, String firstname, String lastname) {
-        this.id = id;
+    public Person(Integer age, Integer salary, String firstname, String lastname) {
         this.age = age;
         this.salary = salary;
         this.firstname = firstname;
