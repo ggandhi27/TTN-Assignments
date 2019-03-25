@@ -50,5 +50,5 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     @Query("SELECT * FROM Person where age>25 order by id desc ")
     List<Person> getSortById();
     
-    
+    List<Person> findByAgeGreaterThanOrderByIdDesc(int age);
 }

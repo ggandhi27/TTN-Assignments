@@ -5,6 +5,8 @@ import com.springdata.entity.Person;
 import com.springdata.repository.PersonRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 
 import java.util.Arrays;
 
@@ -98,5 +100,12 @@ public class Executor {
         System.out.println("************************ Question 11 ***********************************");
         System.out.println("\n Order by id, Person having age greater than 25 :: \n" + personRepository.getSortById());
         
+        // Question 12
+        System.out.println("************************ Question 12 ***********************************");
+        System.out.println("\n Find by Age and order by id :: \n" + personRepository.findByAgeGreaterThanOrderByIdDesc(25));
+        
+        //Question 13
+        System.out.println("************************ Question 12 ***********************************");
+        System.out.println(personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id"))););
     }
 }
