@@ -3,6 +3,7 @@ package com.springdata.repository;
 import com.springdata.entity.Person;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -22,4 +23,7 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     
     @Query("SELECT p FROM Person p where age=23")
     public Person getComplete();
+    
+    @Query("SELECT COUNT(*) FROM Person WHERE firstname = :firstname")
+    int getPersonCountByName(@Param("firstname") String firstname);
 }

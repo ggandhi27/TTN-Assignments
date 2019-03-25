@@ -75,5 +75,11 @@ public class Executor {
         //Question 8
         System.out.println("************************ Question 8 ***********************************");
         System.out.println(personRepository.getComplete());
+    
+        //Question 9
+        System.out.println("************************ Question 9 ***********************************");
+        System.out.println(personRepository.getPersonCountByName("Gaurav"));
+        
+        
     }
 }
