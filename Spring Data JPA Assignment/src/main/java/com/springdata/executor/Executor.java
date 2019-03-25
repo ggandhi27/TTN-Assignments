@@ -41,5 +41,12 @@ public class Executor {
         personRepository.save(person);
         
         populateTable(personRepository);
+    
+        System.out.println(personRepository.findOne(4));
+        System.out.println(personRepository.exists(8));
+        System.out.println(personRepository.findAll());
+        System.out.println(personRepository.count());
+        personRepository.delete(5);
+        
     }
 }
