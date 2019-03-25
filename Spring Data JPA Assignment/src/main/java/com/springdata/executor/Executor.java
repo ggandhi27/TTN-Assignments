@@ -41,12 +41,26 @@ public class Executor {
         personRepository.save(person);
         
         populateTable(personRepository);
-    
+        
+        
+        //Question 3
+        System.out.println("************************ Question 3 ***********************************");
         System.out.println(personRepository.findOne(4));
         System.out.println(personRepository.exists(8));
         System.out.println(personRepository.findAll());
         System.out.println(personRepository.count());
         personRepository.delete(5);
+        
+        //Question 4
+        System.out.println("************************ Question 4 ***********************************");
+        System.out.println("First Name ::");
+        System.out.println(personRepository.findAllByFirstname("Gaurav"));
+        System.out.println("Last Name ::");
+        System.out.println(personRepository.findAllByLastname("Gandhi"));
+        System.out.println(personRepository.findById(6));
+        
+        //Question 5
+        System.out.println("************************ Question 5 ***********************************");
         
     }
 }
