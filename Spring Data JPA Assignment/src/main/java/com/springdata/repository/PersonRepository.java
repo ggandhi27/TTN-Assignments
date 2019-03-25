@@ -19,4 +19,7 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     
     @Query("SELECT firstname,lastname from Person where age=23")
     public Object[] findFirstAndLast();
+    
+    @Query("SELECT p FROM Person p where age=23")
+    public Person getComplete();
 }

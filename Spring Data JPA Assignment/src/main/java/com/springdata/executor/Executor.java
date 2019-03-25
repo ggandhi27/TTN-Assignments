@@ -72,6 +72,8 @@ public class Executor {
         firstAndLast = personRepository.findFirstAndLast();
         System.out.println(firstAndLast);
         
-        
+        //Question 8
+        System.out.println("************************ Question 8 ***********************************");
+        System.out.println(personRepository.getComplete());
     }
 }
