@@ -52,15 +52,17 @@ public class Executor {
         personRepository.delete(5);
         
         //Question 4
-        System.out.println("************************ Question 4 ***********************************");
+        System.out.println("************************ Question 4,5 ***********************************");
         System.out.println("First Name ::");
         System.out.println(personRepository.findAllByFirstname("Gaurav"));
         System.out.println("Last Name ::");
         System.out.println(personRepository.findAllByLastname("Gandhi"));
         System.out.println(personRepository.findById(6));
         
-        //Question 5
-        System.out.println("************************ Question 5 ***********************************");
+        //Question 6
+        System.out.println("************************ Question 6 ***********************************");
+        System.out.println(personRepository.findFirstName());
+        
         
     }
 }

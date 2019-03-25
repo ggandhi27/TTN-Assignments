@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de8c605c-9f59-4b45-adb7-c12c94e25771" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Spring Data JPA Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data JPA Assignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Data JPA Assignment/out/production/classes/com/springdata/executor/Executor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data JPA Assignment/out/production/classes/com/springdata/executor/Executor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Data JPA Assignment/out/production/classes/com/springdata/repository/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data JPA Assignment/out/production/classes/com/springdata/repository/PersonRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Spring Data JPA Assignment/src/main/java/com/springdata/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data JPA Assignment/src/main/java/com/springdata/executor/Executor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Data JPA Assignment/src/main/java/com/springdata/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data JPA Assignment/src/main/java/com/springdata/repository/PersonRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -205,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553528177610" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553528455854" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -251,15 +248,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553493495123</updated>
-      <workItem from="1553493499165" duration="9871000" />
+      <workItem from="1553493499165" duration="9924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9871000" />
+    <option name="totallyTimeSpent" value="9924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
