@@ -1,6 +1,7 @@
 package com.springdata.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -14,6 +15,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories("com.springdata.repositories")
+@ComponentScan("com")
 public class PersistenceContext {
     
     @Bean
@@ -23,13 +25,13 @@ public class PersistenceContext {
         driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/springDemo");
         driverManagerDataSource.setUsername("gaurav");
         driverManagerDataSource.setPassword("123456");
-        return (DataSource) driverManagerDataSource;
+        return driverManagerDataSource;
     }
     
     @Bean
     LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource){
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
-        entityManagerFactoryBean.setDataSource((javax.sql.DataSource) dataSource);
+        entityManagerFactoryBean.setDataSource(dataSource);
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         entityManagerFactoryBean.setPackagesToScan("com.springdata.entity");
         

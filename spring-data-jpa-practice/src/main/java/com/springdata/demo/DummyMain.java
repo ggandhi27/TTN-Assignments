@@ -9,13 +9,20 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class DummyMain {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(PersistenceContext.class);
-    
+        EmployeeRepository employeerepository = applicationContext.getBean(EmployeeRepository.class);
+        
         Employee employee = new Employee();
         employee.setAge(23);
         employee.setName("Peter");
         employee.setSalary(10000);
-        EmployeeRepository employeeRepository = applicationContext.getBean(EmployeeRepository.class);
-        employeeRepository.save(employee);
-        
+        employeerepository.save(employee);
+//        Employee employee1 = new Employee("Amanda",23,12252);
+//        employeerepository.save(employee1);
+    
+//        for(Employee e:employeerepository.findById(1)){
+//            System.out.println(e);
+//        }
+    
+        System.out.println(employeerepository.findById(2));
     }
 }
