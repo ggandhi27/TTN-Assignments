@@ -80,6 +80,21 @@ public class Executor {
         System.out.println("************************ Question 9 ***********************************");
         System.out.println(personRepository.getPersonCountByName("Gaurav"));
         
+        //Question 10
+        System.out.println("************************ Question 10 ***********************************");
+        System.out.println("Count :: " + personRepository.count());
+        System.out.println("Find Distinct by age :: \n\n" + personRepository.findDistinctByAge());
+        System.out.println("\n******************* Or ******************\n" + personRepository.findByFirstnameOrAge("Gaurav",26));
+        System.out.println("\n******************* And ******************\n" + personRepository.findByFirstnameAndAge("Gaurav",26));
+        System.out.println("\n Age ::\n " + personRepository.findByAgeBetween(20,25));
+        System.out.println("\n Salary Less Than \n" + personRepository.findBySalaryLessThan(1000));
+        System.out.println("\n Salary Greater Than \n" + personRepository.findBySalaryGreaterThan(1000));
+        System.out.println("\n First Name Like \n" + personRepository.findByFirstnameLike("f%"));
+        System.out.println("\n First Name Not \n" + personRepository.findByFirstnameNot("Gaurav"));
+        System.out.println("\n First Name In \n" + personRepository.findByFirstnameIn(Arrays.asList("Gaura","firstname1")));
+        System.out.println("\n First Name Ignore Case \n" + personRepository.findByFirstnameIgnoreCase("gaurav"));
+        
+        
         
     }
 }

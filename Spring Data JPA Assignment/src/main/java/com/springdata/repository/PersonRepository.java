@@ -26,4 +26,24 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     
     @Query("SELECT COUNT(*) FROM Person WHERE firstname = :firstname")
     int getPersonCountByName(@Param("firstname") String firstname);
+    
+    List<Person> findDistinctByAge();
+    
+    List<Person> findByFirstnameOrAge(String firstname,Integer age);
+    
+    List<Person> findByFirstnameAndAge(String gaurav, int i);
+    
+    List<Person> findByAgeBetween(int max,int min);
+    
+    List<Person> findBySalaryLessThan(int salary);
+    
+    List<Person> findBySalaryGreaterThan(int salary);
+    
+    List<Person> findByFirstnameLike(String firstname);
+    
+    List<Person> findByFirstnameNot(String firstname);
+    
+    List<Person> findByFirstnameIn(List<String> firstnameList);
+    
+    List<Person> findByFirstnameIgnoreCase(String firstname);
 }
