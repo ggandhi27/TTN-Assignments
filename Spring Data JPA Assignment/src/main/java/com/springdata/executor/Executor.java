@@ -6,8 +6,12 @@ import com.springdata.repository.PersonRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Executor {
+import java.util.Arrays;
 
+public class Executor {
+    
+    private static Object[] firstAndLast;
+    
     public static void populateTable(PersonRepository personRepository) {
         int i;
         for(i = 0;i<10;i++) {
@@ -62,6 +66,11 @@ public class Executor {
         //Question 6
         System.out.println("************************ Question 6 ***********************************");
         System.out.println(personRepository.findFirstName());
+        
+        //Question 7
+        System.out.println("************************ Question 7 ***********************************");
+        firstAndLast = personRepository.findFirstAndLast();
+        System.out.println(firstAndLast);
         
         
     }

@@ -17,5 +17,6 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     @Query("SELECT firstname from Person where age=25")
     public List<String> findFirstName();
     
-    
+    @Query("SELECT firstname,lastname from Person where age=23")
+    public Object[] findFirstAndLast();
 }
