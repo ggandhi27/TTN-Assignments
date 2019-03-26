@@ -5,10 +5,12 @@ import com.springdata.entity.Person;
 import com.springdata.repository.PersonRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Executor {
     
@@ -85,7 +87,7 @@ public class Executor {
         //Question 10
         System.out.println("************************ Question 10 ***********************************");
         System.out.println("Count :: " + personRepository.count());
-        System.out.println("Find Distinct by age :: \n\n" + personRepository.findDistinctByAge());
+//        System.out.println("Find Distinct by age :: \n\n" + personRepository.findDistinctByAge());
         System.out.println("\n******************* Or ******************\n" + personRepository.findByFirstnameOrAge("Gaurav",26));
         System.out.println("\n******************* And ******************\n" + personRepository.findByFirstnameAndAge("Gaurav",26));
         System.out.println("\n Age ::\n " + personRepository.findByAgeBetween(20,25));
@@ -93,19 +95,20 @@ public class Executor {
         System.out.println("\n Salary Greater Than \n" + personRepository.findBySalaryGreaterThan(1000));
         System.out.println("\n First Name Like \n" + personRepository.findByFirstnameLike("f%"));
         System.out.println("\n First Name Not \n" + personRepository.findByFirstnameNot("Gaurav"));
-        System.out.println("\n First Name In \n" + personRepository.findByFirstnameIn(Arrays.asList("Gaura","firstname1")));
+        System.out.println("\n First Name In \n" + personRepository.findByFirstnameIn(Arrays.asList("Gaurav","firstname1")));
         System.out.println("\n First Name Ignore Case \n" + personRepository.findByFirstnameIgnoreCase("gaurav"));
-        
+
         //Question 11
         System.out.println("************************ Question 11 ***********************************");
         System.out.println("\n Order by id, Person having age greater than 25 :: \n" + personRepository.getSortById());
-        
+
         // Question 12
         System.out.println("************************ Question 12 ***********************************");
         System.out.println("\n Find by Age and order by id :: \n" + personRepository.findByAgeGreaterThanOrderByIdDesc(25));
-        
+
         //Question 13
         System.out.println("************************ Question 13 ***********************************");
-        System.out.println(personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id"))));
+        Page<Person> personPage = (Page<Person>) personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id")));
+        List<Person> personList = personPage.getContent();
     }
 }

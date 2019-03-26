@@ -22,33 +22,33 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     public Object[] findFirstAndLast();
     
     @Query("SELECT p FROM Person p where age=23")
-    public Person getComplete();
+    public List<Person> getComplete();
     
     @Query("SELECT COUNT(*) FROM Person WHERE firstname = :firstname")
     int getPersonCountByName(@Param("firstname") String firstname);
     
-    List<Person> findDistinctByAge();
-    
+//    List<Person> findDistinctByAge();
+
     List<Person> findByFirstnameOrAge(String firstname,Integer age);
-    
+
     List<Person> findByFirstnameAndAge(String gaurav, int i);
-    
+
     List<Person> findByAgeBetween(int max,int min);
-    
+
     List<Person> findBySalaryLessThan(int salary);
-    
+
     List<Person> findBySalaryGreaterThan(int salary);
-    
+
     List<Person> findByFirstnameLike(String firstname);
-    
+
     List<Person> findByFirstnameNot(String firstname);
-    
+
     List<Person> findByFirstnameIn(List<String> firstnameList);
-    
+
     List<Person> findByFirstnameIgnoreCase(String firstname);
-    
-    @Query("SELECT * FROM Person where age>25 order by id desc ")
+
+    @Query("SELECT p FROM Person p where age>25 order by id desc ")
     List<Person> getSortById();
-    
+
     List<Person> findByAgeGreaterThanOrderByIdDesc(int age);
 }
