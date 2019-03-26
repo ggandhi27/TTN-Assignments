@@ -1,6 +1,8 @@
 package com.springdata.repository;
 
 import com.springdata.entity.Person;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
@@ -51,4 +53,6 @@ public interface PersonRepository extends CrudRepository<Person,Integer> {
     List<Person> getSortById();
 
     List<Person> findByAgeGreaterThanOrderByIdDesc(int age);
+    
+    Page<Person> findAll(Pageable pageable);
 }

@@ -108,7 +108,7 @@ public class Executor {
 
         //Question 13
         System.out.println("************************ Question 13 ***********************************");
-        Page<Person> personPage = (Page<Person>) personRepository.findAll((Iterable<Integer>) new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id")));
+        Page<Person> personPage = personRepository.findAll( new PageRequest(0,3,new Sort(Sort.Direction.DESC,"id")));
         List<Person> personList = personPage.getContent();
     }
 }
