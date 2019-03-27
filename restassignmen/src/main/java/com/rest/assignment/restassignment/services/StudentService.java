@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class StudentService {
@@ -18,8 +17,8 @@ public class StudentService {
         return (List<Student>) studentRepository.findAll();
     }
     
-    public Optional<Student> getSingleStudent(int id) {
-        return studentRepository.findById(id);
+    public Student getSingleStudent(int id) {
+        return studentRepository.findById(id).orElse(null);
     }
     
     public void createStudent(Student student) {
