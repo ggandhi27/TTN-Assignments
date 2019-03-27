@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class StudentController {
     }
     
     @PostMapping("/students")
-    public ResponseEntity<Object> createStudent(@RequestBody Student student) {
+    public ResponseEntity<Object> createStudent(@Valid @RequestBody Student student) {
         studentService.createStudent(student);
     
         URI uri = ServletUriComponentsBuilder.

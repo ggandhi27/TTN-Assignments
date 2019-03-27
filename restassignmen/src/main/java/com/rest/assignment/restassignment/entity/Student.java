@@ -3,6 +3,7 @@ package com.rest.assignment.restassignment.entity;
 import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "student")
@@ -11,7 +12,10 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    
+    @Size(min = 2,message = "Student name should contain at least 2 characters.")
     private String name;
+    
     private String city;
     private Integer age;
     private Integer standard;
