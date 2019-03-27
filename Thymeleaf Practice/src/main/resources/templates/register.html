@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<!--/*@thymesVar id="user" type="com.thymeleaf.practice.thymeleafpractice.entity.User"*/-->
+    <form action="#" th:action="@{/submit}" method="post" th:object="${user}">
+        <label>Name : </label>
+        <input th:type="text" th:field="*{name}">
+        <label>Password : </label>
+        <input th:type="password" th:field="*{password}">
+        <input th:type="submit">
+    </form>
+</body>
+</html>
