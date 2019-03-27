@@ -4,6 +4,7 @@ import com.rest.assignment.restassignment.entity.Student;
 import com.rest.assignment.restassignment.exceptions.StudentNotFoundException;
 import com.rest.assignment.restassignment.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -11,6 +12,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
+import java.util.Locale;
 
 @RestController
 public class StudentController {
@@ -18,6 +20,8 @@ public class StudentController {
     @Autowired
     StudentService studentService;
     
+    @Autowired
+    MessageSource messageSource;
     
     @GetMapping("/students")
     public List<Student> getStudents() {
@@ -62,6 +66,13 @@ public class StudentController {
     public Student updateStudent(@RequestBody Student student) {
         studentService.updateStudent(student);
         return student;
+    }
+    
+    @GetMapping("/message")
+    public String getMessage(@RequestHeader(name="Accept-Language",required = false) Locale locale) {
+        System.out.println("Hello World");
+        System.out.println(locale.getLanguage());
+        return messageSource.getMessage("good.morning.message",null,locale);
     }
     
 }
