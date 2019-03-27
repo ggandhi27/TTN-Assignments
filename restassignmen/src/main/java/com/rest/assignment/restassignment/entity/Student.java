@@ -1,5 +1,6 @@
 package com.rest.assignment.restassignment.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "student")
+@JsonIgnoreProperties(value = "id")
 public class Student {
     
     @Id
