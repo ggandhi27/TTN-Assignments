@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        .odd {
+            background-color: #f2f2f2
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <th>User Name</th>
+    <th>Type</th>
+    </thead>
+    <tbody>
+    <tr th:each="user,iterStat:${userlist}" class="row" th:classappend="${iterStat.odd}?odd">
+        <td th:text="${user.username}" class="row" th:classappend="${iterStat.odd}?odd"></td>
+        <td th:text="${user.type}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

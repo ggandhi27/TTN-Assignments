@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+    <!--/*@thymesVar id="user" type="com.thymeleaf.assignment.thymeleafassignment.entity.User"*/-->
+    <form action="#" th:action="@{/submituserform}" method="post">
+        <table th:object="${user}">
+            <tr>
+                <td>Username : </td>
+                <td><input th:type="text" th:field="*{username}"></td>
+            </tr>
+            <td>
+                <td>Type : </td>
+                <td>
+                    <select th:field="*{type}">
+                        <option th:each="competency : ${T(com.thymeleaf.assignment.thymeleafassignment.entity.UserEnum).values()}"
+                                th:value="${competency.getValue()}" th:text="${competency.getValue()}"
+                        ></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input th:type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
