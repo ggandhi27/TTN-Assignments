@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Register</title>
+</head>
+<body>
+
+<!--/*@thymesVar id="employee" type="com.thymeleaf.assignment.thymeleafassignment.entity.Employee"*/-->
+<form action="#" th:action="@{'/submitdynamic'}" method="post" th:object="${employee}">
+    <label>First Name : </label>
+    <input th:type="text" th:field="*{firstname}"> <br>
+    <label>Last Name : </label>
+    <input th:type="text" th:field="*{lastname}"> <br>
+    <label>Salary : </label>
+    <input th:type="text" th:field="*{salary}"> <br>
+    <label>Age</label>
+    <input th:type="text" th:field="*{age}"> <br>
+    <label>City : </label>
+    <input th:type="text" th:field="*{city}"> <br>
+    <input type="submit">
+</form>
+</body>
+</html>

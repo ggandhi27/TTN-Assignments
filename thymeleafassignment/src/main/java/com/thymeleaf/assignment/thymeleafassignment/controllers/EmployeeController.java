@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 public class EmployeeController {
+    
+    List<Employee> employeeList = new ArrayList<Employee>();
     
     @RequestMapping("/register")
     ModelAndView getRegister(Employee employee) {
@@ -28,5 +33,20 @@ public class EmployeeController {
         else {
             return employee;
         }
+    }
+    
+    @RequestMapping("/dynamicregister")
+    ModelAndView getDynamicRegister(Employee employee) {
+        ModelAndView modelAndView = new ModelAndView("dynamicregister");
+        modelAndView.addObject("employee",employee);
+        return modelAndView;
+    }
+    
+    @RequestMapping("/submitdynamic")
+    ModelAndView submitDynamicForm(@ModelAttribute Employee employee) {
+        ModelAndView modelAndView = new ModelAndView("submitdynamic");
+        employeeList.add(employee);
+        modelAndView.addObject("employeelist",employeeList);
+        return modelAndView;
     }
 }
