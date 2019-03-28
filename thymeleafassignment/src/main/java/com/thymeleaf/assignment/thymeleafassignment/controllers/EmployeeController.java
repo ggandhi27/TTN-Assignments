@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.sql.Time;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -47,6 +51,21 @@ public class EmployeeController {
         ModelAndView modelAndView = new ModelAndView("submitdynamic");
         employeeList.add(employee);
         modelAndView.addObject("employeelist",employeeList);
+        return modelAndView;
+    }
+    
+    @RequestMapping("/gettime")
+    @ResponseBody
+    String getTime() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        String timeStr = dtf.format(now);
+        return timeStr;
+    }
+    
+    @RequestMapping("/question7")
+    ModelAndView question7() {
+        ModelAndView modelAndView = new ModelAndView("question7");
         return modelAndView;
     }
 }
