@@ -18,6 +18,9 @@
     <input th:type="text" th:field="*{age}"> <br>
     <label>City : </label>
     <input th:type="text" th:field="*{city}"> <br>
+    <label>Type : </label><br>
+    <input th:type="radio" th:field="*{admin}" th:value="admin">Admin<br>
+    <input th:type="radio" th:field="*{admin}" th:value="subordinate">Subordinate<br>
     <input type="submit">
 </form>
 </body>

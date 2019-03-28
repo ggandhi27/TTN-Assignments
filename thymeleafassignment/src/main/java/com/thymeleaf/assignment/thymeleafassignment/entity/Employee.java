@@ -7,6 +7,24 @@ public class Employee {
     private Integer salary;
     private Integer age;
     private String city;
+    private String admin;
+    
+    public String getAdmin() {
+        return admin;
+    }
+    
+    public void setAdmin(String admin) {
+        this.admin = admin;
+    }
+    
+    public Employee(String firstname, String lastname, Integer salary, Integer age, String city, String admin) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.salary = salary;
+        this.age = age;
+        this.city = city;
+        this.admin = admin;
+    }
     
     public Employee() {
     }

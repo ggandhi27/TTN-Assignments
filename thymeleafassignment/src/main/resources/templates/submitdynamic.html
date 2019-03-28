@@ -30,6 +30,7 @@
     <th>Age</th>
     <th>Salary</th>
     <th>City</th>
+    <th>Admin</th>
     </thead>
     <!--/*@thymesVar id="employee" type="com.thymeleaf.assignment.thymeleafassignment.entity.Employee"*/-->
     <tbody>
@@ -38,7 +39,11 @@
             <td th:text="${employee.lastname}"></td>
             <td th:text="${employee.age}"></td>
             <td th:text="${employee.salary}"></td>
-            <td th:text="${employee.city}"></td>
+            <td th:text="${employee.city}"></td><input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+            <td>
+                <span th:if="${employee.admin == 'admin'}">Hello Admin</span>
+                <span th:if="${employee.admin == 'subordinate'}">Hello Subordinate</span>
+            </td>
         </tr>
     </tbody>
 </table>
