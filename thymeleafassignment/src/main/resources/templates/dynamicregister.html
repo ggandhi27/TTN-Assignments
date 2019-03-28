@@ -5,7 +5,7 @@
     <title>Employee Register</title>
 </head>
 <body>
-
+<header th:insert="/general.html :: header"></header>
 <!--/*@thymesVar id="employee" type="com.thymeleaf.assignment.thymeleafassignment.entity.Employee"*/-->
 <form action="#" th:action="@{'/submitdynamic'}" method="post" th:object="${employee}">
     <label>First Name : </label>
@@ -23,5 +23,6 @@
     <input th:type="radio" th:field="*{admin}" th:value="subordinate">Subordinate<br>
     <input type="submit">
 </form>
+<footer th:insert="/general.html :: footer"></footer>
 </body>
 </html>
