@@ -12,11 +12,12 @@ public class Author {
     @Column (name = "First_Name")
     private String firstname;
     @Column (name = "Last_Name")
+    @Transient
     private String lastname;
     @Column (name = "Age")
     private Integer age;
     @Column ( name = "DateOfBirth")
-    @Transient
+    @Temporal(TemporalType.DATE)
     private Date dob;
     
     @Override
