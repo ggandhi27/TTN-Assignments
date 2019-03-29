@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
@@ -16,15 +15,15 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!--echo all executed SQL-->
-        <property name="show_sql">false</property>
+        <property name="show_sql">true</property>
 
         <!--drop or re-create database schema at startup-->
-        <!--<property name="hbm2ddl.auto">create-drop</property>-->
-        <property name="hbm2ddl.auto">update</property>
-        <!--<property name="hbm2ddl.auto">create-drop</property>-->
+        <property name="hbm2ddl.auto">create</property>
 
         <!--Annotated entity class-->
+        <mapping class="entity.Test"/>
         <mapping class="entity.Author"/>
+        <!--<mapping class="entity.Address"/>-->
 
     </session-factory>
 </hibernate-configuration>

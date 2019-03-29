@@ -1,7 +1,8 @@
-package com.hibernate.assignment.hibernateassignment.entity;
+package entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Author {
@@ -22,6 +23,13 @@ public class Author {
     @Embedded
     Address address;
     
+    public Author(String firstname, String lastname, Integer age, Date dob, Address address) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.dob = dob;
+        this.address = address;
+    }
     
     @Override
     public String toString() {
@@ -31,8 +39,18 @@ public class Author {
                 ", lastname='" + lastname + '\'' +
                 ", age=" + age +
                 ", dob=" + dob +
+                ", address=" + address +
                 '}';
     }
+    
+    public Address getAddress() {
+        return address;
+    }
+    
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+//    List<String> subjectList;
     
     public Author(String firstname, String lastname, Integer age, Date dob) {
         this.firstname = firstname;

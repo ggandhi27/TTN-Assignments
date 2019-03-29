@@ -1,13 +1,12 @@
-package com.hibernate.assignment.hibernateassignment.entity;
+package entity;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Embeddable
 public class Address {
 
-    @Id
-    Integer id;
     Integer streetNumber;
     String location;
     String state;
@@ -15,20 +14,12 @@ public class Address {
     public Address() {
     }
     
-    public Address(Integer id, Integer streetNumber, String location, String state) {
-        this.id = id;
+    public Address(Integer streetNumber, String location, String state) {
         this.streetNumber = streetNumber;
         this.location = location;
         this.state = state;
     }
     
-    public Integer getId() {
-        return id;
-    }
-    
-    public void setId(Integer id) {
-        this.id = id;
-    }
     
     public Integer getStreetNumber() {
         return streetNumber;
@@ -57,7 +48,6 @@ public class Address {
     @Override
     public String toString() {
         return "Address{" +
-                "id=" + id +
                 ", streetNumber=" + streetNumber +
                 ", location='" + location + '\'' +
                 ", state='" + state + '\'' +
