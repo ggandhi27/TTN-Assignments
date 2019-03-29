@@ -10,17 +10,17 @@ public class Author {
     
     @Id
     private Integer id;
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     private Integer age;
     
     public Author() {
     }
     
-    public Author(Integer id, String firstName, String lastName, Integer age) {
+    public Author(Integer id, String firstname, String lastname, Integer age) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.age = age;
     }
     
@@ -32,20 +32,20 @@ public class Author {
         this.id = id;
     }
     
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
     
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
     
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
     
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
     
     public Integer getAge() {
@@ -60,8 +60,8 @@ public class Author {
     public String toString() {
         return "Author{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", age=" + age +
                 '}';
     }
