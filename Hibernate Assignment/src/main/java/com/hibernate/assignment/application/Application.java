@@ -44,6 +44,7 @@ public class Application {
         if(isUpdated(session,5)) {
         System.out.println("Age of id 5 is updated to 61");
         }
+        sessionFactory.close();
     }
     
     static boolean isCreated(Session session, Author author) {

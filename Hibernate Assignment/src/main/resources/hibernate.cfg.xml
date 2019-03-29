@@ -21,6 +21,7 @@
         <!--drop or re-create database schema at startup-->
         <!--<property name="hbm2ddl.auto">create-drop</property>-->
         <property name="hbm2ddl.auto">update</property>
+        <!--<property name="hbm2ddl.auto">create-drop</property>-->
 
         <!--Annotated entity class-->
         <mapping class="com.hibernate.assignment.hibernateassignment.entity.Author"/>
