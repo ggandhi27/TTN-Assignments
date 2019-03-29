@@ -7,11 +7,15 @@ import java.util.Date;
 public class Author {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column (name = "First_Name")
     private String firstname;
+    @Column (name = "Last_Name")
     private String lastname;
+    @Column (name = "Age")
     private Integer age;
+    @Column ( name = "DateOfBirth")
     private Date dob;
     
     @Override
