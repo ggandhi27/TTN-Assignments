@@ -16,6 +16,7 @@ public class Author {
     @Column (name = "Age")
     private Integer age;
     @Column ( name = "DateOfBirth")
+    @Transient
     private Date dob;
     
     @Override
