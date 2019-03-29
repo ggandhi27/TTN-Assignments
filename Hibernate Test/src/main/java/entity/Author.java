@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -22,14 +23,8 @@ public class Author {
     private Date dob;
     @Embedded
     Address address;
-    
-    public Author(String firstname, String lastname, Integer age, Date dob, Address address) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.age = age;
-        this.dob = dob;
-        this.address = address;
-    }
+    @ElementCollection
+    List<Subject> subjects = new ArrayList<Subject>();
     
     @Override
     public String toString() {
@@ -40,7 +35,33 @@ public class Author {
                 ", age=" + age +
                 ", dob=" + dob +
                 ", address=" + address +
+                ", subjects=" + subjects +
                 '}';
+    }
+    
+    public List<Subject> getSubjects() {
+        return subjects;
+    }
+    
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
+    }
+    
+    public Author(String firstname, String lastname, Integer age, Date dob, Address address, List<Subject> subjects) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.dob = dob;
+        this.address = address;
+        this.subjects = subjects;
+    }
+    
+    public Author(String firstname, String lastname, Integer age, Date dob, Address address) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.dob = dob;
+        this.address = address;
     }
     
     public Address getAddress() {
