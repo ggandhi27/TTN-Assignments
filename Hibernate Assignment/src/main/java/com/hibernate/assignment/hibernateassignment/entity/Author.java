@@ -1,7 +1,7 @@
 package com.hibernate.assignment.hibernateassignment.entity;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 @Entity
 public class Author {

@@ -5,14 +5,35 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+        int i;
         Author author = new Author();
         author.setFirstname("George");
         author.setLastname("Martin");
         author.setAge(59);
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
+        Calendar cal =  Calendar.getInstance();
+        for(i = 0;i<4;i++) {
+            Author author1 = new Author();
+            author1.setFirstname("firstname" + i);
+            author1.setLastname("lastname" + i);
+            author1.setAge(36+i*3);
+            String dateInString = new java.text.SimpleDateFormat("EEEE, dd/MM/yyyy")
+                    .format(cal.getTime());
+            SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd/MM/yyyy");
+            Date parsedDate = formatter.parse(dateInString);
+            author1.setDob(parsedDate);
+            session.beginTransaction();
+            session.save(author1);
+            session.getTransaction().commit();
+        }
         if (isCreated(session, author)) {
             System.out.println(author + " is inserted successfully.");
         }
