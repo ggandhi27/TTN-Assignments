@@ -1,6 +1,7 @@
 package com.hibernate.assignment.hibernateassignment.entity;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 public class Author {
@@ -11,6 +12,33 @@ public class Author {
     private String firstname;
     private String lastname;
     private Integer age;
+    private Date dob;
+    
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                ", dob=" + dob +
+                '}';
+    }
+    
+    public Author(String firstname, String lastname, Integer age, Date dob) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.dob = dob;
+    }
+    
+    public Date getDob() {
+        return dob;
+    }
+    
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
     
     public Author() {
     }
@@ -54,13 +82,4 @@ public class Author {
         this.age = age;
     }
     
-    @Override
-    public String toString() {
-        return "Author{" +
-                "id=" + id +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }

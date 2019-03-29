@@ -16,9 +16,12 @@ public class Application {
         if (isCreated(session, author)) {
             System.out.println(author + " is inserted successfully.");
         }
-        read(session, 1);
-        if(isDeleted(session,1)) {
-            System.out.println("Row with id " + 1 + " is deleted.");
+        read(session, 2);
+        if (isDeleted(session, 2)) {
+            System.out.println("Row with id " + 2 + " is deleted.");
+        }
+        if(isUpdated(session,5)) {
+        System.out.println("Age of id 5 is updated to 61");
         }
     }
     
@@ -38,7 +41,16 @@ public class Application {
     
     static boolean isDeleted(Session session, int id) {
         session.beginTransaction();
-        session.delete(session.get(Author.class,id));
+        session.delete(session.get(Author.class, id));
+        session.getTransaction().commit();
+        return true;
+    }
+    
+    static boolean isUpdated(Session session, int id) {
+        session.beginTransaction();
+        Author author = session.get(Author.class,id);
+        author.setAge(61);
+        session.update(author);
         session.getTransaction().commit();
         return true;
     }
