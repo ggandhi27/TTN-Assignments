@@ -3,22 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Employee Register</title>
+    <style>
+        .loading-gif {
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#loading-gif").hide();
+            $("#form").submit(function (e) {
+                e.preventDefault();
+                $("#loading-gif").show();
+                $("#form").hide();
+                setTimeout(function () {
+                    $.ajax({
+                        url: "/register",
+                        method: "POST",
+                        data: $("#form").serialize()
+                    }).done(function (data) {
+                        $("#loading-gif").hide();
+                        if (data) {
+                            $("#data").html(data).css("color", "green");
+                        }
+                    }).fail(function (error) {
+                        $("#form").show();
+                        $("#loading-gif").hide();
+                        $("#data").html(error).css("color", "red");
+                    })
+                }, 3000);
+            });
+        });
+    </script>
 </head>
 <body>
 <header th:insert="/general.html :: header"></header>
 <!--/*@thymesVar id="employee" type="com.thymeleaf.assignment.thymeleafassignment.entity.Employee"*/-->
-<form action="#" th:action="@{'/submit'}" method="post" th:object="${employee}">
+<form action="#" th:action="@{'/submit'}" method="post" th:object="${employee}" th:id="form">
     <label>First Name : </label>
-    <input th:type="text" th:field="*{firstname}"> <br>
+    <input th:type="text" th:field="*{firstname}" th:id="firstname"> <br>
     <label>Last Name : </label>
-    <input th:type="text" th:field="*{lastname}"> <br>
+    <input th:type="text" th:field="*{lastname}" th:id="lastname"> <br>
     <label>Salary : </label>
-    <input th:type="text" th:field="*{salary}"> <br>
+    <input th:type="text" th:field="*{salary}" th:id="salary"> <br>
     <label>Age</label>
-    <input th:type="text" th:field="*{age}"> <br>
+    <input th:type="text" th:field="*{age}" th:id="age"> <br>
     <label>City : </label>
-    <input th:type="text" th:field="*{city}"> <br>
+    <input th:type="text" th:field="*{city}" th:id="city"> <br>
     <input type="submit">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/09b24e31234507.564a1d23c07b4.gif" class="loading-gif"
+    id="loading-gif"/>
 </form>
 <footer th:insert="/general.html :: footer"></footer>
 </body>
