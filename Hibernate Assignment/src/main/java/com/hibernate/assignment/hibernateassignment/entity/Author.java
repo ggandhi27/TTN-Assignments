@@ -19,6 +19,9 @@ public class Author {
     @Column ( name = "DateOfBirth")
     @Temporal(TemporalType.DATE)
     private Date dob;
+    @Embedded
+    Address address;
+    
     
     @Override
     public String toString() {
