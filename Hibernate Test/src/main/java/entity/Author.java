@@ -24,7 +24,7 @@ public class Author {
     @Embedded
     Address address;
     @ElementCollection
-    List<Subject> subjects = new ArrayList<Subject>();
+    List<String> subjects = new ArrayList<>();
     
     @Override
     public String toString() {
@@ -39,15 +39,15 @@ public class Author {
                 '}';
     }
     
-    public List<Subject> getSubjects() {
+    public List<String> getSubjects() {
         return subjects;
     }
     
-    public void setSubjects(List<Subject> subjects) {
+    public void setSubjects(List<String> subjects) {
         this.subjects = subjects;
     }
     
-    public Author(String firstname, String lastname, Integer age, Date dob, Address address, List<Subject> subjects) {
+    public Author(String firstname, String lastname, Integer age, Date dob, Address address, List<String> subjects) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;

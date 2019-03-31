@@ -1,20 +1,22 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Subject {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     
     public Subject() {
     }
     
-    public Subject(Integer id, String name) {
-        this.id = id;
+    public Subject(String name) {
         this.name = name;
     }
     

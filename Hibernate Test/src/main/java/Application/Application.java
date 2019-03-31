@@ -8,22 +8,20 @@ import org.hibernate.cfg.Configuration;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class Application {
     public static void main(String[] args) throws ParseException {
-    
+        
+        List<String> subjects = Arrays.asList("English","Hindi");
         int i;
         Author author = new Author();
         Address address = new Address();
-        author.setFirstname("George");
-        author.setLastname("Martin");
-        author.setAge(59);
-        address.setLocation("Noida");
-        address.setState("UP");
-        address.setStreetNumber(45);
         author.setAddress(address);
+        author.setSubjects(subjects);
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         Calendar cal =  Calendar.getInstance();
@@ -37,6 +35,7 @@ public class Application {
             address1.setLocation("Location"+i);
             address1.setState("State"+i);
             author1.setAddress(address1);
+            author1.setSubjects(subjects);
             String dateInString = new java.text.SimpleDateFormat("EEEE, dd/MM/yyyy")
                     .format(cal.getTime());
             SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd/MM/yyyy");
