@@ -1,11 +1,9 @@
 package entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "Book")
 public class Book {
     
     @Id
@@ -16,8 +14,7 @@ public class Book {
     public Book() {
     }
     
-    public Book(Integer id, String bookName) {
-        this.id = id;
+    public Book(String bookName) {
         this.bookName = bookName;
     }
     

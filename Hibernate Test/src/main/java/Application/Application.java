@@ -2,6 +2,7 @@ package Application;
 
 import entity.Address;
 import entity.Author;
+import entity.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -18,16 +19,19 @@ public class Application {
         
         List<String> subjects = Arrays.asList("English","Hindi");
         int i;
+        Book book = new Book("GOT");
         Author author = new Author();
         Address address = new Address();
         author.setAddress(address);
         author.setSubjects(subjects);
+        author.setBook(book);
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         Calendar cal =  Calendar.getInstance();
         for(i = 0;i<4;i++) {
             Author author1 = new Author();
             Address address1 = new Address();
+            Book book1 = new Book("Book"+i);
             author1.setFirstname("firstname" + i);
             author1.setLastname("lastname" + i);
             author1.setAge(36+i*3);
@@ -41,6 +45,7 @@ public class Application {
             SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd/MM/yyyy");
             Date parsedDate = formatter.parse(dateInString);
             author1.setDob(parsedDate);
+            author1.setBook(book1);
             session.beginTransaction();
             session.save(author1);
             session.getTransaction().commit();

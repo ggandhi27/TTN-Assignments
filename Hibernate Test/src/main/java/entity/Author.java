@@ -25,6 +25,17 @@ public class Author {
     Address address;
     @ElementCollection
     List<String> subjects = new ArrayList<>();
+    @OneToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "Book_join_column")
+    Book book;
+    
+    public Book getBook() {
+        return book;
+    }
+    
+    public void setBook(Book book) {
+        this.book = book;
+    }
     
     @Override
     public String toString() {
